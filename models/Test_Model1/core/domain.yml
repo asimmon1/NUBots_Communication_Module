@@ -1,0 +1,29 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- go_place:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- go_beacon:
+    use_entities: true
+- take_object:
+    use_entities: true
+- take_from:
+    use_entities: true
+- place_object:
+    use_entities: true
+- deliver_object:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_confirm:
+  - text: Understood
+actions: []
+forms: {}
+e2e_actions: []

@@ -1,0 +1,9 @@
+{
+  "priority": 4,
+  "max_history": 5,
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJDE7NT4/KSs1uaS2NhYAlkgd6Q==": "utter_confirm",
+    "eJyFjMEJwCAMAFfJAJ3AVUoJKimkrbHE2I+4e4X27+8OjltbX6DdSg/6aJzFQfsAxSdy8MvFxUhGWwvpaFiGmgPzJ2EOB0Xrk1M1I8WYZWdNk9P2AlUFOjY=": "action_listen"
+  }
+}

@@ -1,0 +1,789 @@
+version: "2.0"
+
+nlu:
+
+  # multi-intent handling ==============================================================================================
+
+  #Complex commands have not yet been accounted for. ===================================================================
+  # Custom defined Categories
+  - intent: take_object_from_the_placement+place_on_placement
+    examples: |
+      - Get the [tea]("object") from the [sink]("place") deliver it on the [bookcase]("place")
+      - Pick up the [beer]("object") from the [drawer]("place") put it on the [cabinet]("place")
+      - Grasp the [tea]("object") from the [sink]("place") place it on the [drawer]("place")
+      - Pick up the [coke]("object") from the [cabinet]("place") put it on the [drawer]("place")
+
+  - intent: find_name_in_place+go_to_place
+    examples: |
+      - look for [Ethan]("name") in the [dining table]("place") and escort him to the [TV stand]("place")
+      - Please find [Emma]("name") in the [living table]("place") and escort her to the [dining table]("place")
+
+  - intent: go_to_place+take_object_from_the_placement+deliver_it_to_me
+    examples: |
+      - Navigate to the [bar]("place") pick up the [soap]("object") from the [bar]("place") give it to me
+      - Navigate to the [cabinet]("place") get the [pringles]("object") from the [living shelf]("place") deliver it to me
+      -Navigate to the [sideshelf]("place") get the [pringles]("object") from the [sideshelf]("place") and deliver it me
+      -Go to the [desk]("place") grasp the [bisquits]("object") from the [bar]("place") bring it to me
+      -Go to the [bookcase]("place") grasp the [tea]("object") from the [sink]("place") deliver it to me
+
+  - intent: go_to_place+take_object_from_the_placement+deliver_it_to_name_in_place
+    examples: |
+      - Go to the [cabinet]("place") pick up the [pringles]("object") from the [sideshelf]("place") deliver it to [Liam]("name") in the [bed]("place")
+      - Navigate to the [sideshelf]("place") grasp the [coke]("object") from the [TV stand]("place") hand it to [Sophia]("name") in the [living table]("place")
+
+    # Cat 2 multi intents ==============================================================================================
+    # triple defined commands
+  - intent: take_object_from_the_placement+deliver_it_to_me+answer_question
+    examples: |
+      - Take the [apple]("object") from the [desk]("place") hand it to me and answer a question
+      - Could you get the [beer]("object") from the [bookcase]("place") deliver it to me and answer a question
+      - Could you take the [apple]("object") from the [desk]("place") deliver it to me and answer a question
+      - Could you please pick up the [coke]("object") from the [sideshelf]("place") hand it to me and answer a question
+      - Take the [tea]("object") from the [bookcase]("place") deliver it to me and answer a question
+      - Please get the [pretzels]("object") from the [dining table]("place") deliver it to me and answer a question
+      - Robot please take the [shampoo]("object") from the [bookcase]("place") bring it to me and answer a question
+      - Could you pick up the [soap]("object") from the [living shelf]("place") hand it to me and answer a question
+      - Could you please pick up the [shampoo]("object") from the [drawer]("place") deliver it to me and answer a question
+      - Could you grasp the [choco syrup]("object") from the [dining table]("place") hand it to me and answer a question
+      - Could you please take the [apple]("object") from the [bookcase]("place") hand it to me and answer a question
+      - Grasp the [tea]("object") from the [cabinet]("place") bring it to me and answer a question
+      - Could you pick up the [pumper nickel]("object") from the [bookcase]("place") deliver it to me and answer a question
+      - Robot please get the [coconut milk]("object") from the [sideshelf]("place") deliver it to me and answer a question
+      - Robot please pick up the [paprika]("object") from the [sink]("place") bring it to me and answer a question
+
+  - intent: take_object_from_the_placement+deliver_it_to_name_in_place+answer_question
+    examples: |
+      - Could you pick up the [choco syrup]("object") from the [living table]("place") give it to [Sophia]("name") in the [living table]("place") and answer a question
+      - Could you get the [pumper nickel]("object") from the [bedside]("place") hand it to [Robin]("name") in the [bed]("place") and answer a question
+      - Could you please pick up the [coke]("object") from the [drawer]("place") hand it to [Emma]("name") in the [TV stand]("place") and answer a question
+      - Please grasp the [pretzels]("object") from the [sideshelf]("place") hand it to [Sophia]("name") in the [sink]("place") and answer a question
+      - Could you please take the [bisquits]("object") from the [bedside]("place") hand it to [Noah]("name") in the [TV stand]("place") and answer a question
+      - Robot please take the [coke]("object") from the [dining table]("place") give it to [Ethan]("name") in the [cabinet]("place") and answer a question
+      - Get the [coke]("object") from the [cabinet]("place")  deliver it to [Emily]("name") in the [cabinet]("place") and answer a question
+      - could you get the [tea]("object") from the [living table]("place") bring it to [Ava]("name") in the [desk]("place") and answer a question
+      - Robot please take the [pretzels]("object") from the [living shelf]("place") hand it to [Emma]("name") in the [living table]("place") and answer a question
+      - Could you please get the [choco syrup]("object") from the [cabinet]("place") deliver it to [Michael]("name") in the [TV stand]("place") and answer a question
+      - Robot please take the [coke]("object") from the [living table]("place") give it to [James]("name") in the [bed]("place") and answer a question
+      - Could you get the [pringles]("object") from the [desk]("place") give it to [Ava]("name") in the [desk]("place") and answer a question
+      - Could you please get the [tea]("object") from the [sink]("place") give it to [Madison]("name") in the [TV stand]("place") and answer a question
+      - Could you please pick up the [baby sweets]("object") from the [sideshelf]("place") hand it to [Charlotte]("name") in the [living table]("place") and answer a question
+      - Robot please grasp the [apple]("object") from the [bar]("place") bring it to [Ava]("name") in the [TV stand]("place") and answer a question
+
+  - intent: take_object_from_the_placement+deliver_it_to_name_in_place+follow_them
+    examples: |
+      - Pick up the [beer]("object") from the [living table]("place") deliver it to [Madison]("name") in the [living table]("place") and follow her
+      - Robot please get the [apple]("object") from the [desk]("place") hand it to [William]("name") in the [cabinet]("place") and follow him
+      - Could you pick up the [apple]("object") from the [cupboard]("place") give it to [Jacob]("name") in the [bed]("place") and follow him
+      - Robot please pick up the [soap]("object") from the [sideshelf]("place") give it to [Angel]("name") in the [TV stand]("place") and follow her
+      - Robot please grasp the [bisquits]("object") from the [sink]("place") give it to [Noah]("name") in the [bed]("place") and follow him
+      - Could you please take the [chips]("object") from the [bedside]("place") give it to [Liam]("name") in the [living table]("place") and follow him
+      - Pick up the [chips]("object") from the [TV stand]("place") hand it to [William]("name") in the [cabinet]("place") and follow him
+      - Please get the [apple]("object") from the [drawer]("place") hand it to [Madison]("name") in the [TV stand]("place") and follow her
+      - Robot please grasp the [tea]("object") from the [sideshelf]("place") give it to [Isabella]("name") in the [TV stand]("place") and follow her
+      - Could you please grasp the [bisquits]("object") from the [drawer]("place") bring it to [Robin]("name") in the [dining table]("place") and follow her
+      - Could you grasp the [choco syrup]("object") from the [dining table]("place") give it to [Angel]("name") in the [desk]("place") and follow her
+      - Robot please grasp the [paprika]("object") from the [dining table]("place") hand it to [Madison]("name") in the [desk]("place") and follow her
+      - Could you pick up the [paprika]("object") from the [bookcase]("place") give it to [Emily]("name") in the [bed]("place") and follow her
+      - Please get the [soap]("object") from the [dining table]("place") give it to [Robin]("name") in the [bed]("place") and follow her
+      - Please grasp the [baby sweets]("object") from the [living shelf]("place") hand it to [Ava]("name") in the [sink]("place") and follow her
+
+  - intent: take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_room
+    examples: |
+      - Could you get the [pumper nickel]("object") from the [bedside]("place") bring it to [Daniel]("name") in the [TV stand]("place") and take him to the [corridor]("room")
+      - Could you take the [coke]("object") from the [dining table]("place") hand it to [Jacob]("name") in the [living table]("place") and escort him to the [Kitchen]("room")
+      - Take the [choco syrup]("object") from the [cabinet]("place") hand it to [Mason]("name") in the [TV stand]("place") and guide him to the [living room]("room")
+      - Robot please pick up the [coconut milk]("object") from the [cabinet]("place") bring it to [Angel]("name") in the [bed]("place") and escort her to the [corridor]("room")
+      - Could you please get the [shampoo]("object") from the [cupboard]("place") deliver it to [Mason]("name") in the [bed]("place") and guide him to the [dining room]("room")
+      - Could you pick up the [tea]("object") from the [sideshelf]("place") bring it to [Emma]("name") in the [desk]("place") and guide her to the [office]("room")
+      - Please get the [shampoo]("object") from the [sink]("place") hand it to [Madison]("name") in the [TV stand]("place") and escort her to the [dining room]("room")
+      - Robot please get the [apple]("object") from the [bedside]("place") give it to [Noah]("name") in the [dining table]("place") and escort him to the [living room]("room")
+      - Grasp the [pumper nickel]("object") from the [sideshelf]("place") bring it to [Taylor]("name") in the [living table]("place") and escort her to the [bedroom]("room")
+      - Please take the [beer]("object") from the [cabinet]("place") give it to [Emma]("name") in the [TV stand]("place") and guide her to the [corridor]("room")
+      - Please get the [coconut milk]("object") from the [living shelf]("place") bring it to [Jacob]("name") in the [cabinet]("place") and escort him to the [corridor]("room")
+      - Pick up the [paprika]("object") from the [drawer]("place") hand it to [Emma]("name") in the [cabinet]("place") and guide her to the [living room]("room")
+      - Could you pick up the [coconut milk]("object") from the [TV stand]("place") deliver it to [Mason]("name") in the [sink]("place") and escort him to the [corridor]("room")
+      - Could you please grasp the [shampoo]("object") from the [bar]("place") hand it to [Liam]("name") in the [TV stand]("place") and escort him to the [Kitchen]("room")
+      - Could you grasp the [pretzels]("object") from the [cupboard]("place") hand it to [Charlotte]("name") in the [bed]("place") and guide her to the [bedroom]("room")
+
+  - intent: take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_place
+    examples: |
+      - Get the [baby sweets]("object") from the [sink]("place") bring it to [Madison]("name") in the [desk]("place") and escort her to the [exit]("place")
+      - Could you grasp the [tea]("object") from the [cupboard]("place") bring it to [Daniel]("name") in the [bed]("place") and take him to the [sink]("place")
+      - Robot please take the [shampoo]("object") from the [bar]("place") hand it to [Noah]("name") in the [desk]("place") and guide him to the [cabinet]("place")
+      - Please get the [apple]("object") from the [living shelf]("place") deliver it to [Noah]("name") in the [TV stand]("place") and escort him to the [exit]("place")
+      - Take the [choco syrup]("object") from the [cabinet]("place") bring it to [William]("name") in the [desk]("place") and take him to the [exit]("place")
+      - Could you take the [soap]("object") from the [TV stand]("place") bring it to [Emily]("name") in the [dining table]("place") and guide her to the [exit]("place")
+      - Please grasp the [soap]("object") from the [bookcase]("place") give it to [James]("name") in the [desk]("place") and take him to the [exit]("place")
+      - Please get the [choco syrup]("object") from the [living table]("place") bring it to [Charlotte]("name") in the [sink]("place") and guide her to the [bed]("place")
+      - Please take the [choco syrup]("object") from the [drawer]("place") bring it to [Jacob]("name") in the [sink]("place") and escort him to the [dining table]("place")
+      - Get the [tea]("object") from the [drawer]("place")  give it to [Ava]("name") in the [sink]("place")  and take her to the [cabinet]("place")
+      - Robot please pick up the [chips]("object") from the [sideshelf]("place") bring it to [Angel]("name") in the [living table]("place") and escort her to the [exit]("place")
+      - Could you please grasp the [soap]("object") from the [desk]("place") bring it to [Daniel]("name") in the [desk]("place") and escort him to the [exit]("place")
+      - Robot please pick up the [paprika]("object") from the [bar]("place") deliver it to [James]("name") in the [bed]("place") and take him to the [exit]("place")
+      - Please grasp the [coke]("object") from the [sideshelf]("place") give it to [Ava]("name") in the [living table]("place") and escort her to the [exit]("place")
+      - Pick up the [tea]("object") from the [sink]("place") give it to [Ethan]("name") in the [living table]("place") and escort him to the [dining table]("place")
+
+  - intent: place_object_in_placement+find_name_in_room+answer_question
+    examples: |
+      - Could you place a [coke]("object") on the [bar]("place") look for [Emma]("name") in the [Kitchen]("room") and answer a question
+      -Robot please put a [shampoo]("object") on the [living table]("place") look for [Alexander]("name") in the [kitchen]("room") and answer a question
+      -Robot please deliver a [chips]("object") on the [bookcase]("place") find [Isabella]("name") in the [living room]("room") and answer a question
+      -Could you please place a [paprika]("object") on the [bar]("place") find [Angel]("name") in the [living room]("room") and answer a question
+      - Please place a [shampoo]("object") on the [living table]("place") locate [Robin]("name") in the [office]("room") and answer a question
+      - Put a [beer]("object") on the [dining table]("place")  locate [Emma]("name") in the [office]("room") and answer a question
+      - Could you deliver a [pringles]("object") on the [dining table]("place")  look for [Ava]("name") in the [dining room]("room") and answer a question
+      - Robot please deliver a [choco syrup]("object") on the [drawer]("place")  look for [Alexander]("name") in the [office]("room") and answer a question
+      - Please deliver a [chips]("object") on the [dining table]("place")  locate [Isabella]("name") in the [kitchen]("room") and answer a question
+      - Please place a [pretzels]("object") on the [cabinet]("place")  locate [Angel]("name") in the [Kitchen]("room") and answer a question
+      - Robot please put a [bisquits]("object") on the [cupboard]("place")  locate [Mason]("name") in the [living room]("room") and answer a question
+      - Deliver a [shampoo]("object") on the [sideshelf]("place")  find [James]("name") in the [dining room]("room") and answer a question
+      - Please put a [coke]("object") on the [dining table]("place")  find [Alexander]("name") in the [Kitchen]("room") and answer a question
+      - Could you please place a [apple]("object") on the [sink]("place")  locate [William]("name") in the [office]("room") and answer a question
+      - Could you place a [apple]("object") on the [bookcase]("place")  look for [Charlotte]("name") in the [kitchen]("room") and answer a question
+
+  - intent: find_object_in_room+place_on_placement
+    examples: |
+      - Could you please look for a [pumper nickel]("object") in the [kitchen]("room") and place it on the [desk]("place")
+      - Locate a [pumper nickel]("object") in the [bedroom]("room") and put it on the [bar]("place")
+      - Robot please look for a [bisquits]("object") in the [dining room]("room") and put it on the [TV stand]("place")
+      - Could you please look for a [beer]("object") in the [Kitchen]("room") and deliver it on the [desk]("place")
+      - Look for a [soap]("object") in the [office]("room") and deliver it on the [bookcase]("place")
+      - Could you please find a [choco syrup]("object") in the [living room]("room") and deliver it on the [desk]("place")
+      - Could you please find a [apple]("object") in the [Kitchen]("room") and put it on the [cupboard]("place")
+      - Could you please look for a [coke]("object") in the [office]("room") and put it on the [cupboard]("place")
+      - Find a [paprika]("object") in the [Kitchen]("room") and put it on the [drawer]("place")
+      - Could you please find a [apple]("object") in the [corridor]("room") and put it on the [bookcase]("place")
+      - Please find a [shampoo]("object") in the [Kitchen]("room") and put it on the [bookcase]("place")
+      - Robot please look for a [coke]("object") in the [kitchen]("room") and put it on the [cabinet]("place")
+      - Robot please look for a [pumper nickel]("object") in the [office]("room") and put it on the [sink]("place")
+      - Find a [apple]("object") in the [Kitchen]("room") and place it on the [bedside]("place")
+      - Could you please find a [tea]("object") in the [dining room]("room") and put it on the [cupboard]("place")
+
+  - intent: find_object_in_room+deliver_it_to_me
+    examples: |
+      - Please locate a [pretzels]("object") in the [living room]("room") and give it to me
+      - Locate a pumper [nickel]("object") in the [bedroom]("room") and deliver it to me
+      - Could you find a [apple]("object") in the [office]("room") and give it to me
+      - Please locate a [chips]("object") in the [bedroom]("room") and deliver it to me
+      - Could you please locate a [chips]("object") in the [bedroom]("room") and deliver it to m
+      - Robot please look for a [paprika]("object") in the [living room]("room") and bring it to me
+      - Could you please look for a [baby sweets]("object") in the [kitchen]("room") and hand it to me
+      - Could you look for a [pringles]("object") in the [corridor]("room") and deliver it to me
+      - Robot please find a [pringles]("object") in the [office]("room") and hand it to me
+      - Please look for a [paprika]("object") in the [Kitchen]("room") and deliver it to me
+      - Could you locate a [coconut milk]("object") in the [kitchen]("room") and hand it to me
+      - Please locate a [paprika]("object") in the [bedroom]("room") and bring it to me
+      - Look for a [bisquits]("object") in the [Kitchen]("room") and give it to me
+      - Could you look for a [paprika]("object") in the [office]("room") and deliver it to me
+      - Could you please find a [coconut milk]("object") in the [office]("room") and hand it to me
+
+  - intent: find_object_in_room+deliver_it_to_name_in_place
+    examples: |
+      - Please find a [bisquits]("object") in the [office]("room") and bring it to [Charlotte]("name") in the [living table]("place")
+      - Could you please find a [chips]("object") in the [office]("room") and give it to [Liam]("name") in the [bed]("place")
+      - Robot please find a [paprika]("object") in the [corridor]("room") and deliver it to [Emily]("name") in the [TV stand]("place")
+      - Could you please locate a [pumper nickel]("object") in the [kitchen]("room") and give it to [Jacob]("name") in the [TV stand]("place")
+      - Robot please locate a [apple]("object") in the [bedroom]("room") and give it to [Ethan]("name") in the [sink]("place")
+      - Please look for a [pringles]("object") in the [corridor]("room") and bring it to [Charlotte]("name") in the [desk]("place")
+      - Robot please look for a [baby sweets]("object") in the [living room]("room") and hand it to [Robin]("name") in the [sink]("place")
+      - Could you please locate a [baby sweets]("object") in the [Kitchen]("room") and give it to [Emma]("name") in the [TV stand]("place")
+      - Could you find a [pringles]("object") in the [dining room]("room") and give it to [William]("name") in the [cabinet]("place")
+      - Please look for a [choco syrup]("object") in the [kitchen]("room") and give it to [Ethan]("name") in the [sink]("place")
+      - Could you look for a [tea]("object") in the [living room]("room") and hand it to [Michael]("name") in the [sink]("place")
+      - Could you please find a [pringles]("object") in the [bedroom]("room") and give it to [Madison]("name") in the [desk]("place")
+      - Could you please look for a [coconut milk]("object") in the [dining room]("room") and deliver it to [Angel]("name") in the [TV stand]("place")
+
+  - intent: find_them_in_place+guide_them_to_the_room
+    examples: |
+      - Could you find [Taylor]("name") in the [TV stand]("place") and escort her to the [living room]("room")
+      - Could you please locate [Liam]("name") in the [sink]("place") and take him to the [office]("room")
+      - Please find [Emma]("name") in the [TV stand]("place") and escort her to the [kitchen]("room")
+      - Locate [Jacob]("name") in the [cabinet]("place") and escort him to the [Kitchen]("room")
+      - Could you please look for [Taylor]("name") in the [living table]("place") and escort her to the [office]("room")
+      - Please look for [Ethan]("name") in the [TV stand]("place") and guide him to the [office]("room")
+      - Robot please locate [Charlotte]("name") in the [bed]("place") and take her to the [living room]("room")
+      - Robot please look for [Jacob]("name") in the [dining table]("place") and take him to the [corridor]("room")
+      - Could you locate [Angel]("name") in the [TV stand]("place") and escort her to the [dining room]("room")
+      - Could you find [Daniel]("name") in the [sink]("place") and take him to the [dining room]("room")
+      - Locate [William]("name") in the [cabinet]("place") and take him to the [office]("room")
+      - Could you find [Ava]("name") in the [dining table]("place") and escort her to the [office]("room")
+      - Robot please locate [Emma]("name") in the [desk]("place") and take her to the [corridor]("room")
+      - Robot please locate [Sophia]("name") in the [cabinet]("place") and escort her to the [dining room]("room")
+      - Locate [Emma]("name") in the [sink]("place") and guide her to the [dining room]("room")
+
+  - intent: find_them_in_place+guide_them_to_the_place
+    examples: |
+      - Locate [Alexander]("name") in the [bed]("place") and take him to the [dining table]("place")
+      - Robot please look for [Alexander]("name") in the [living table]("place") and escort him to the [desk]("place")
+      - Robot please locate [Daniel]("name") in the [cabinet]("place") and guide him to the [exit]("place")
+      - Could you find [Sophia]("name") in the [bed]("place") and escort her to the [exit]("place")
+      - Robot please find [Charlotte]("name") in the [desk]("place") and escort her to the [exit]("place")
+      - Please look for [Liam]("name") in the [TV stand]("place") and escort him to the [exit]("place")
+      - Find [Ethan]("name") in the [desk]("place") and guide him to the [exit]("place")
+      - Could you find [Angel]("name") in the [TV stand]("place") and escort her to the [TV stand]("place")
+      - Could you please locate [Jacob]("name") in the [bed]("place") and escort him to the [exit]("place")
+      - Please locate [Angel]("name") in the [TV stand]("place") and take her to the [exit]("place")
+      - Could you please look for [Angel]("name") in the [TV stand]("place") and take her to the [exit]("place")
+      - Robot please look for [Angel]("name") in the [dining table]("place") and take her to the [TV stand]("place")
+      - Could you please find [Emily]("name") in the [dining table]("place") and guide her to the [dining table]("place")
+      - Robot please look for [Alexander]("name") in the [sink]("place") and take him to the [cabinet]("place")
+      - Find [James]("name") in the [living table]("place") and escort him to the [exit]("place")
+
+
+
+    # double defined commands
+    # go and get it
+  - intent: take_object_from_the_placement+place_object_in_placement
+    examples: |
+      - Robot please take the [coconut milk]("object") from the [bedside]("place") and deliver it on the [drawer]("place")
+      -Could you please grasp the [bisquits]("object") from the [bookcase]("place") and deliver it on the [bookcase]("place")
+      -Pick up the [choco syrup]("object") from the [desk]("place") and deliver it on the [TV stand]("place")
+      -Robot please grasp the [tea]("object") from the [bookcase]("place") and deliver it on the [dining table]("place")
+      -Robot please get the [shampoo]("object") from the [living shelf]("place") and deliver it on the [living table]("place")
+      -Could you please get the [tea]("object") from the [bookcase]("place") and put it on the [cabinet]("place")
+      -Could you please grasp the [chips]("object") from the [living table]("place") and put it on the [desk]("place")
+      -Could you take the [baby sweets]("object") from the [drawer]("place") and put it on the [drawer]("place")
+      -Grasp the [chips]("object") from the [bookcase]("place") and put it on the [cabinet]("place")
+      -Pick up the [tea]("object") from the [cupboard]("place") and deliver it on the [bar]("place")
+      -Could you pick up the [chips]("object") from the [bar]("place") and place it on the [bookcase]("place")
+      -Please pick up the [pringles]("object") from the [living table]("place") and put it on the [sideshelf]("place")
+      -Please pick up the [coke]("object") from the [dining table]("place") and deliver it on the [TV stand]("place")
+      -Get the [chips]("object") from the [bar]("place") and place it on the [cupboard]("place")
+      -Robot please pick up the [chips]("object") from the [desk]("place") and deliver it on the [sink]("place")
+
+  - intent: find_object_in_room+place_object_in_placement
+    examples: |
+      - Please look for a [apple]("object") in the [office]("room") and deliver it on the [living shelf]("place")
+      - Could you look for a [apple]("object") in the [kitchen]("room") and place it on the [bookcase]("place")
+      -Could you please locate a [tea]("object") in the [dining room]("room") and place it on the [TV stand]("place")
+      -Robot please locate a [apple]("object") in the [bedroom]("room") and place it on the [sideshelf]("place")
+      -Could you please find a [pringles]("object") in the [kitchen]("room") and deliver it on the [bookcase]("place")
+      -Please find a [bisquits]("object") in the [Kitchen]("room") and place it on the [bookcase]("place")
+      -Please find a [pringles]("object") in the [living room]("room") and deliver it on the [desk]("place")
+      -Robot please find a [pumper nickel]("object") in the [office]("room") and place it on the [desk]("place")
+      -Could you locate a [chips]("object") in the [Kitchen]("room") and put it on the [sink]("place")
+      -Please look for a [coke]("object") in the [office]("room") and place it on the [living shelf]("place")
+      -Could you look for a [bisquits]("object") in the [office]("room") and put it on the [TV stand]("place")
+      -Find a [tea]("object") in the [bedroom]("room") and put it on the [sideshelf]("place")
+      -Could you please look for a [choco syrup]("object") in the [dining room]("room") and place it on the [sideshelf]("place")
+      -Could you find a [coke]("object") in the [Kitchen]("room") and deliver it on the [living shelf]("place")
+      -Look for a [choco syrup]("object") in the [corridor]("room") and deliver it on the [TV stand]("place")
+
+  - intent: find_object_in_room+deliver_it_to_me
+    examples: |
+        -Robot please find a [coke]("object") in the [bedroom]("room") and hand it to me
+        -Could you please look for a [coconut milk]("object") in the [corridor]("room") and bring it to me
+        -Could you please look for a [coke]("object") in the [living room]("room") and give it to me
+        -Locate a [coke]("object") in the [living room]("room") and bring it to me
+        -Robot please look for a [choco syrup]("object") in the [dining room]("room") and deliver it to me
+        -Find a [coconut milk]("object") in the [kitchen]("room") and hand it to me
+        -Find a [beer]("object") in the [corridor]("room") and give it to me
+        -Could you locate a [soap]("object") in the [office]("room") and bring it to me
+        -Could you find a [soap]("object") in the [dining room]("room") and deliver it to me
+        -Robot please locate a [pringles]("object") in the [kitchen]("room") and deliver it to me
+        -Please look for a [tea]("object") in the [dining room]("room") and bring it to me
+        -Please find a [paprika]("object") in the [office]("room") and give it to me
+        -Robot please locate a [apple]("object") in the [bedroom]("room") and give it to me
+        - Could you please look for a [coke]("object") in the [Kitchen]("room") and hand it to me
+        - Could you please look for a [pringles]("object") in the [Kitchen]("room") and deliver it to me
+
+  - intent: find_object_in_room+deliver_it_to_name_in_place
+    examples: |
+        -Please find a [pumper nickel]("object") in the [living room]("room") deliver it to [Noah]("name") in the [bed]("place")
+        -Please locate a [coke]("object") in the [Kitchen]("room") and bring it to [Emily]("name") in the [desk]("place")
+        -Could you look for a [pretzels]("object") in the [living room]("room") and give it to [James]("name") in the [TV stand]("place")
+        -Find a [pretzels]("object") in the [office]("room") and deliver it to [Ethan]("name") in the [TV stand]("place")
+        -Please look for a [pretzels]("object") in the [office]("room") and deliver it to [Madison]("name") in the [TV stand]("place")
+        -Could you look for a [choco syrup]("object") in the [Kitchen]("room") and deliver it to [Michael]("name") in the [bed]("place")
+        -Robot please locate a [tea]("object") in the [kitchen]("room") and give it to [Alexander]("name") in the [bed]("place")
+        -Find a [coke]("object") in the [dining room]("room") and give it to [James]("name") in the [TV stand]("place")
+        -Look for a [baby sweets]("object") in the [corridor]("room") and bring it to [Robin]("name") in the [living table]("place")
+        -Look for a [choco syrup]("object") in the [kitchen]("room") and give it to [Mason]("name") in the [bed]("place")
+        -Robot please find a [beer]("object") in the [living room]("room") and bring it to [Jacob]("name") in the [living table]("place")
+        -Robot please look for a [coke]("object") in the [corridor]("room") and hand it to [Angel]("name") in the [living table]("place")
+        -Please look for a [baby sweets]("object") in the [bedroom]("room") and give it to [Ethan]("name") in the [dining table]("place")
+        -Could you find a [baby sweets]("object") in the [dining room]("room") and bring it to [Angel]("name") in the [TV stand]("place")
+        -Robot please locate a [soap]("object") in the [living room]("room") and deliver it to [James]("name") in the [cabinet]("place")
+
+  # find and answer
+  - intent: find_name_in_place+answer_question
+    examples:
+        -Could you find [Daniel]("name") in the [dining table]("place") and answer a question
+        -Please find [Noah]("name") in the [sink]("place") and answer a question
+        -Locate [Mason]("name") in the [sink]("place") and answer a question
+        -Please find [Jacob]("name") in the [cabinet]("place") and answer a question
+        -Please look for [Angel]("name") in the [bed]("place") and answer a question
+        -Please locate [Michael]("name") in the [bed]("place") and answer a question
+        -Could you please locate [Emily]("name") in the [living table]("place") and answer a question
+        -Please look for [Emma]("name") in the [living table]("place") and answer a question
+        -Could you please find [Jacob]("name") in the [living table]("place") and answer a question
+        -Could you please look for [Sophia]("name") in the [dining table]("place") and answer a question
+        -Could you please look for [Noah]("name") in the [desk]("place") and answer a question
+        -Please look for [Madison]("name") in the [sink]("place") and answer a question
+        -Could you please locate [James]("name") in the [living table]("place") and answer a question
+        -Find [Sophia]("name") in the [dining table]("place") and answer a question
+        -Locate [Mason]("name") in the [TV stand]("place") and answer a question
+
+  - intent: find_name_in_room+answer_question
+    examples: |
+        - Could you look for [Emma]("name") in the [bedroom]("room") answer a question
+        -Robot please look for [Angel]("name") in the [bedroom]("room") answer a question
+        -Please locate [Mason]("name") in the [bedroom]("room") answer a question
+        -Please locate [William]("name") in the [corridor]("room") answer a question
+        -Could you locate [Charlotte]("name") in the [office]("room") answer a question
+        -Please look for [Sophia]("name") in the [living room]("room") answer a question
+        -Find [Madison]("name") in the [dining room]("room") answer a question
+        -Could you look for [Charlotte]("name") in the [Kitchen]("room") answer a question
+        - Could you look for [Emma]("name") in the [dining room]("room") answer a question
+        -Please find [Ava]("name") in the [corridor]("room") answer a question
+        -Please locate [Emma]("name") in the [kitchen]("room") answer a question
+        -Could you locate [Emily]("name") in the [kitchen]("room") answer a question
+        -Please locate [Daniel]("name") in the [Kitchen]("room") answer a question
+        -Could you find [Charlotte]("name") in the [office]("room") answer a question
+        -Please find [Angel]("name") in the [kitchen]("room") answer a question
+
+  # find and follow
+  - intent: find_gesture_person_in_room+follow_them
+    examples: |
+        -Find the [pointing left]("gesture") person in the [bedroom]("room") follow him
+        -Robot please locate the [rising right arm]("gesture") person in the [kitchen]("room") and follow him
+        -Look for the [pointing right]("gesture") person in the [dining room]("room") and follow him
+        -Could you please find the [rising left arm]("gesture") person in the [living room]("room") follow him
+        -Could you please look for the [pointing right]("gesture") person in the [corridor]("room") and follow him
+        -Robot please look for the [pointing right]("gesture") person in the [office]("room") follow him
+        -Could you look for the [rising left]("gesture") arm person in the [Kitchen]("room") follow him
+        -Could you please find the [pointing left]("gesture") person in the [dining room]("room") follow him
+        -Could you locate the [pointing right]("gesture") person in the [dining room]("room") follow him
+        -Please locate the [waving]("gesture") person in the [dining room]("room") follow him
+        -Please look for the [waving]("gesture") person in the [corridor]("room") and follow him
+        -Locate the [pointing left]("gesture") person in the [bedroom]("room") follow him
+        -Could you find the [pointing right]("gesture") person in the [bedroom]("room") follow him
+        -Could you please locate the [pointing left]("gesture") person in the [dining room]("room") follow him
+        -Could you look for the [pointing left]("gesture") person in the [corridor]("room") and follow him
+
+  - intent: find_name_in_room+follow_them
+    examples: |
+        - Find [Alexander]("name") in the [bedroom]("room") follow him
+        - Look for [Alexander]("name") in the [kitchen]("room") and follow him
+        - Please look for [Angel]("name") in the [corridor]("room") follow her
+        - Could you look for [Michael]("name") in the [living room]("room") and follow him
+        - Could you please find [James]("name") in the [bedroom]("room") and follow him
+        - Please locate [Michael]("name") in the [corridor]("room") and follow him
+        - Find [Daniel]("name") in the [corridor]("room") and follow him
+        - Could you please look for [William]("name") in the [office]("room") and follow him
+        - Locate [Angel]("name") in the [dining room]("room") follow her
+        - Please look for [Isabella]("name") in the [dining room]("room") follow her
+        - Could you find [Ethan]("name") in the [dining room]("room") and follow him
+        - Could you find [Ethan]("name") in the [dining room]("room") and follow him
+        - Please locate [William]("name") in the [bedroom]("room") and follow him
+        - Could you find [Emily]("name") in the [living room]("room") follow her
+        - Could you locate [Liam]("name") in the [bedroom]("room") follow him
+        - Please locate [Alexander]("name") in the [kitchen]("room") and follow him
+
+  # find and guide
+  - intent: find_gesture_person_in_room+guide_them_to_the_room
+    examples: |
+        - Could you please find the [rising right arm]("gesture") person in the [corridor]("room") and guide him to the [living room]("room")
+        - Could you please locate the [rising right arm]("gesture") person in the [living room]("room") escort him to the [office]("room")
+        - Look for the [pointing right]("gesture") person in the [office]("room") take him to the [Kitchen]("room")
+        - Please look for the [rising right]("gesture") arm person in the [office]("room") and guide him to the [living room]("room")
+        - Could you find the [pointing left]("gesture") person in the [bedroom]("room") escort him to the [kitchen]("room")
+        - Could you look for the [waving]("gesture") person in the [office]("room") guide him to the [dining room]("room")
+        - Please find the [rising right]("gesture") arm person in the [bedroom]("room") guide him to the [office]("room")
+        - Look for the [pointing left]("gesture") person in the [bedroom]("room") and take him to the [exit]("room")
+        - Please look for the [waving]("gesture") person in the [dining room]("room") escort him to the [sink]("room")
+        - Robot please find the [waving]("gesture") person in the [dining room]("room") take him to the [living room]("room")
+        - Look for the [pointing left]("gesture") person in the [bedroom]("room") take him to the [corridor]("room")
+        - Please find the [pointing left]("gesture") person in the [living room]("room") and escort him to the [exit]("room")
+        - Could you look for the [waving]("gesture") person in the [Kitchen]("room") and take him to the [TV stand]("room")
+        - Robot please look for the [waving]("gesture") person in the [living room]("room") and escort him to the [bedroom]("room")
+        - Please find the [pointing left]("gesture") person in the [kitchen]("room") take him to the [exit]("room")
+
+  - intent: find_name_in_place+guide_them_to_the_room
+    examples: |
+        - Please locate [Jacob]("name") in the [desk]("place") and escort him to the [kitchen]("room")
+        - Could you locate [Alexander]("name") in the [TV stand]("place") and guide him to the [kitchen]("room")
+        - Could you please find [Sophia]("name") in the [sink]("place") escort her to the [Kitchen]("room")
+        - Find [Alexander]("name") in the [TV stand]("place") guide him to the [corridor]("room")
+        - Locate [Robin]("name") in the [cabinet]("place") take her to the [living room]("room")
+        - Please locate [Madison]("name") in the [sink]("place") and guide her to the [office]("room")
+        - Robot please look for [Robin]("name") in the [living table]("place") and guide her to the [kitchen]("room")
+        - Could you please find [Madison]("name") in the [living table]("place") escort her to the [Kitchen]("room")
+        - Could you look for [Ethan]("name") in the [cabinet]("place") and escort him to the [living room]("room")
+        - Could you please locate [Madison]("name") in the [bed]("place") escort her to the [bedroom]("room")
+        - Could you please look for [Taylor]("name") in the [cabinet]("place") and take her to the [kitchen]("room")
+        - Please locate [Emma]("name") in the [TV stand]("place") take her to the [bedroom]("room")
+        - Could you please find [Taylor]("name") in the [cabinet]("place") and take her to the [office]("room")
+        - Robot please find [Taylor]("name") in the [dining table]("place") guide her to the [bedroom]("room")
+        - Robot please find [Isabella]("name") in the [desk]("place") guide her to the [living room]("room")
+
+  - intent: find_gesture_person_in_room+guide_them_to_the_place
+    examples: |
+        - Could you please find the [rising right arm]("gesture") person in the [dining room]("room") take him to the [corridor]("place")
+        - Could you look for the [pointing left]("gesture") person in the [dining room]("room") take him to the [TV stand]("place")
+        - Find the [pointing right]("gesture") person in the [corridor]("room") guide him to the [desk]("place")
+        - Could you please locate the [rising left arm]("gesture") person in the [kitchen]("room") escort him to the [Kitchen]("place")
+        - Look for the [pointing right]("gesture") person in the [dining room]("room") and take him to the [living room]("place")
+        - Could you please locate the [waving]("gesture") person in the [Kitchen]("room") and guide him to the [kitchen]("place")
+        - Locate the [rising left arm]("gesture") person in the [kitchen]("room") and guide him to the [living table]("place")
+        - Please find the [pointing left]("gesture") person in the [corridor]("room") and take him to the [desk]("place")
+        - Could you look for the [waving]("gesture") person in the [dining room]("room") and guide him to the [desk]("place")
+        - Find the [rising left arm]("gesture") person in the [Kitchen]("room") escort him to the [TV stand]("place")
+        - Find the [rising left arm]("gesture") person in the [office]("room") escort him to the [exit]("place")
+        - Robot please look for the [rising right arm]("gesture") person in the [dining room]("room") take him to the [office]("place")
+        - Robot please look for the [pointing left]("gesture") person in the [living room]("room") and guide him to the [TV stand]("place")
+        - Please look for the [pointing left]("gesture") person in the [kitchen]("room") and guide him to the [exit]("place")
+        - Robot please look for the [pointing left]("gesture") person in the [kitchen]("room") and take him to the [exit]("place")
+
+  - intent: find_name_in_place+guide_them_to_the_place
+    examples: |
+        - Look for [William]("name") in the [sink]("place") take him to the [office]("place")
+        - Could you look for [Emma]("name") in the [dining table]("place") take her to the [exit]("place")
+        - Could you please locate [Taylor]("name") in the [desk]("place") take her to the [dining room]("place")
+        - Please locate [Taylor]("name") in the [bed]("place") escort her to the [sink]("place")
+        - Robot please locate [Michael]("name") in the [living table]("place") and escort him to the [cabinet]("place")
+        - Could you please look for [Daniel]("name") in the [bed]("place") and take him to the [exit]("place")
+        - Could you look for [Isabella]("name") in the [sink]("place") escort her to the [living table]("place")
+        - Look for [Angel]("name") in the [sink]("place") escort her to the [sink]("place")
+        - Please locate [Emma]("name") in the [dining table]("place") take her to the [exit]("place")
+        - Robot please locate [Isabella]("name") in the [dining table]("place") escort her to the [exit]("place")
+        - Could you please locate [Noah]("name") in the [desk]("place") and guide him to the [cabinet]("place")
+        - Could you locate [Angel]("name") in the [desk]("place") and escort her to the [living table]("place")
+        - Robot please find [Taylor]("name") in the [desk]("place") and escort her to the [cabinet]("place")
+        - Please look for [Mason]("name") in the [desk]("place") and guide him to the [exit]("place")
+        - Please find [Madison]("name") in the [TV stand]("place") take her to the [exit]("place")
+    # Cat 1 multi intents ==============================================================================================
+    # double defined commands
+    # Take and deliver
+  - intent: take_object_from_the_placement+deliver_it_to_me
+    examples: |
+      - pick up the [tea]("object") from the [sideshelf]("place") give it to me
+      - Pick up the [soap]("object") from the [sideshelf]("place") bring it to me
+      - Grasp the [pringles]("object") from the [TV stand]("place") deliver it to me
+      - get the [pringles]("object") from the [sink]("place") give it to me
+      - Get the [coke]("object") from the [drawer]("place") hand it to me
+      - Pick up the [coke]("object") from the [cupboard]("place") hand it to me
+
+
+  - intent: take_object_from_the_placement+deliver_it_to_name_in_place
+    examples: |
+      -get the [soap]("object") from the [sideshelf]("place") and deliver it to [Charlotte]("name") in the [bed]("place")
+      -pick up the [pringles]("object") from the [living table]("place") and deliver it to [James]("name") in the [desk]("place")
+      -grasp the [pringles]("object") from the [sideshelf]("place") bring it to [Liam]("name") in the [dining table]("place")
+
+    # Find person and answer
+  - intent: find_name_in_place+answer_question
+    examples: |
+      - Locate [Emma]("name") in the [sink]("place") answer a question
+      - look for [Taylor]("name") in the [cabinet]("place") and answer a question
+
+
+  # Triple defined commands
+  # Go get it
+  - intent: go_to_place+take_the_object+place_on_placement
+    examples: |
+      -Navigate to the [living table]("place") pick up the [coke]("object") and deliver it on the [bookcase]("place")
+      -Navigate to the [sideshelf]("place") pick up the [tea]("object") and deliver it on the [cabinet]("place")
+      -Navigate to the [bookcase]("place") grasp the [coke]("object") and deliver it on the [living table]("place")
+
+  - intent: go_to_place+take_the_object+deliver_it_to_me
+    examples: |
+      -Go to the [living table]("place") grasp the [beer]("object") and bring it to me
+      -Navigate to the [bookcase]("place") pick up the [soap]("object") and bring it to me
+      -Go to the [bookcase]("place") pick up the [soap]("object") and bring it to me
+      -Navigate to the [sideshelf]("place") get the [soap]("object") and deliver it to me
+      - Go to the [living shelf]("place") grasp the [tea]("object") and deliver it to me
+
+  - intent: go_to_place+take_the_object+deliver_it_to_name_in_place
+    examples: |
+      - Navigate to the [bedside]("place") grasp the [soap]("object") and give it to [Isabella]("name") in the [TV stand]("place")
+      - Navigate to the [dining table]("place") get the [pringles]("object") and bring it to [Madison]("name") in the [sink]("place")
+      -Go to the [sink]("place") get the [coke]("object") and hand it to [Jacob]("name") in the [bed]("place")
+
+  - intent: take_object_from_the_placement+go_to_place+deliver_to_name
+    examples: |
+      - Pick up the [beer]("object") from the [sink]("place")  navigate to the [dining table]("place") and bring it to [Liam]("name")
+      - Pick up the [beer]("object") from the [living table]("place")  navigate to the [TV stand]("place") and bring it to [Angel]("name")
+      - Pick up the [pringles]("object") from the [living table]("place")  navigate to the [bed]("place") and hand it to [Noah]("name")
+      - Get the [bisquits]("object") from the [desk]("place")  go to the [TV stand]("place")  and deliver it to [Robin]("name")
+      - Grasp the [soap]("object") from the [living shelf]("place")  go to the [TV stand]("place") and hand it to [Mason]("name")
+      - Get the [beer]("object") from the [cabinet]("place")  navigate to the [dining table]("place") and bring it to [Noah]("name")
+
+
+  # Go and speak
+  - intent: go_to_place+find_name_in_place+answer_question
+    examples: |
+      -Go to the [drawer]("place") look for [Jacob]("name") in the [dining table]("place") and answer a question
+      -Navigate to the [sideshelf]("place") look for [Noah]("name") in the [cabinet]("place") and answer a question
+
+  # Take, deliver and answer
+  - intent: take_object_from_the_placement+deliver_it_to_me+answer_question
+    examples: |
+      - grasp the [soap]("object") from the [TV stand]("place") deliver it to me and answer a question
+      - pick up the [pringles]("object") from the [sink]("place") bring it to me and answer a question
+
+
+  - intent: take_object_from_the_placement+deliver_it_to_name_in_place+answer_question
+    examples: |
+      - grasp the [soap]("object") from the [TV stand]("place") deliver it to [Charlotte]("name") in the [dining table]("place") and answer a question
+      -  pick up the [pringles]("object") from the [sink]("place") deliver it to [Michael]("name") in the [TV stand]("place") and answer a question
+      -Grasp the [coke]("object") from the [dining table]("place") look for [Michael]("name") in the [sink]("place") and answer a question
+      - pick up the [pringles]("object") from the [TV stand]("place") bring it to [Liam]("name") in the [cabinet]("place") and answer a question
+
+
+  # Category 2 and 3 single command/intents (excludes overlap from cat 1)   ============================================
+
+  - intent: find_object_in_room
+    examples: |
+        - locate a [pringles]("object") in the [kitchen]("room")
+        - and look for a [pumper nickel]("object") in the [dining room]("room")
+        - locate a [beer]("object") in the [office]("room")
+        - Could you locate a [coconut milk]("object") in the [corridor]("room")
+        -and locate a [chips]("object") in the [dining room]("room")
+        -and look for a [pringles]("object") in the [office]("room")
+        -Find a [chips]("object") in the [kitchen]("room")
+        -Could you please find a [baby sweets]("object") in the [corridor]("room")
+        - look for a [paprika]("object") in the [living room]("room")
+        -Pick up the [choco syrup]("object") from the [kitchen]("room")
+
+  - intent: place_object_in_placement
+    examples: |
+        - Please place a [tea]("object") on the [sideshelf]("place")
+        - deliver a [pringles]("object") on the [sideshelf]("place")
+        -Could you please deliver a [chips]("object") on the [cupboard]("place")
+        -deliver a [choco syrup]("object") on the [sink]("place")
+        -and deliver a [coke]("object") on the [bar]("place")
+
+  - intent: find_name_in_place
+    examples: |
+        - find [Taylor]("name") in the [TV stand]("place")
+        - and locate [Emma]("name") in the [desk]("place")
+        - and look for [James]("name") in the [cabinet]("place")
+        - Robot please find [Robin]("name") in the [sink]("place")
+        - Could you look for [Charlotte]("name") in the [dining table]("place")
+        - find [Daniel]("name") in the [dining table]("place")
+        - and look for [Liam]("name") in the [office]("place")
+        - and locate [Daniel]("name") in the [bed]("place")
+        - locate [Isabella]("name") in the [sink]("place")
+        - and look for [Jacob]("name") in the [desk]("place")
+        - and locate [Liam]("name") in the [TV stand]("place")
+        - Find [Jacob]("name") in the [TV stand]("place")
+
+  - intent: find_them_in_place
+    examples: |
+        - find them in the [TV stand]("place")
+        - and locate them in the [dining table]("place")
+        - and look for her in the [cabinet]("place")
+        - Robot please find her in the [sink]("place")
+        - Could you look for her in the [dining table]("place")
+        - find her in the dining [table]("place")
+        - and look for her in the [office]("place")
+        - and locate her in the [bed]("place")
+        - locate him in the [sink]("place")
+        - and look for him in the [desk]("place")
+        - and locate him in the [TV stand]("place")
+        - Find him in the [desk]("place")
+
+  - intent: find_gesture_person_in_room
+    examples: |
+        -find the [pointing right]("gesture") person in the [bedroom]("room")
+        -Could you find the [rising right arm]("gesture") person in the [bedroom]("room")
+        -Could you please find the [pointing right]("gesture") person in the [kitchen]("room")
+        -locate the [pointing left]("gesture") person in the [office]("room")
+        -find the [rising right arm]("gesture") person in the [living room]("room")
+
+  - intent: find_name_in_room
+    examples: |
+        - Robot please look for [Michael]("name") in the [kitchen]("room")
+        - Please find [Jacob]("name") in the [corridor]("room")
+        - locate [Emma]("name") in the [living room]("room")
+        - Find [William]("name") in the [corridor]("room")
+        - find [Daniel]("name") in the [dining room]("room")
+        - Please find [Isabella]("name") in the [kitchen]("room")
+        - find [Liam]("name") in the [corridor]("room")
+        - Robot please find [James]("name") in the [bedroom]("room")
+        - and look for [Noah]("name") in the [dining room]("room")
+        - Robot please look for [Ethan]("name") in the [office]("room")
+        - look for [William]("name") in the [kitchen]("room")
+        - Please locate [Liam]("name") in the [corridor]("room")
+        - Robot please look for [Michael]("name") in the [corridor]("room")
+        - Please locate [Isabella]("name") in the [bedroom]("room")
+
+
+  - intent: follow_name_who_is_at_place
+    examples: |
+        - and follow [Mason]("name") who is at the [dining table]("place")
+        - Please follow [Mason]("name") who is at the [TV stand]("place")
+        - follow [Michael]("name") who is at the [cabinet]("place")
+        - follow [Emma]("name") who is at the [sink]("place")
+        - and find [Noah]("name") in the [dining table]("place")
+
+  - intent: follow_them
+    examples: |
+        - follow him
+        - and follow him
+        - follow her
+        - and follow her
+
+  - intent: guide_name_from_place_to_room
+    examples: |
+        - Robot please guide [Isabella]("name") from the [desk]("place") to the [corridor]("room")
+        - guide [Isabella]("name") from the [desk]("place") to the [dining room]("room")
+        - and escort [Angel]("name") from the [living table]("place") to the [corridor]("room")
+        - escort [Robin]("name") from the [bed]("place") to the [office]("room")
+        - Could you please guide [James]("name") from the [TV stand]("place") to the [kitchen]("room")
+
+  - intent: guide_name_from_place_to_place
+    examples: |
+        - Robot please guide [Isabella]("name") from the [desk]("place") to the [TV stand]("place")
+        - guide [Isabella]("name") from the [desk]("place") to the [TV stand]("place")
+        - and escort [Angel]("name") from the [living table]("place") to the [exit]("place")
+        - escort [Robin]("name") from the [bed]("place") to the [exit]("place")
+        - Could you please guide [James]("name") from the [TV stand]("place") to the [living table]("place")
+
+  - intent: guide_them_to_the_room
+    examples: |
+        - and escort her to the [office]("room")
+        - and escort her to the [kitchen]("room")
+        - and guide her to the [kitchen]("room")
+        - take her to the [bedroom]("room")
+        - guide her to the [dining room]("room")
+        - escort her to the [living room]("room")
+        - take him to the [corridor]("room")
+        - guide him to the [Kitchen]("room")
+        - and guide him to the [corridor]("room")
+
+  - intent: guide_them_to_the_place
+    examples: |
+        - and escort her to the [exit]("place")
+        - and guide her to the [exit]("place")
+        - take her to the [exit]("place")
+        - guide her to the [cabinet]("place")
+        - escort her to the [desk]("place")
+        - take him to the [sink]("place")
+        - and guide him to the [desk]("place")
+
+  # Category 1 single commands/intents  ================================================================================
+  - intent: go_to_place
+    examples: |
+      - Go to the [living table]("place")
+      - go to the [bookcase]("place")
+      - navigate to the [bedside]("place")
+      - Navigate to the [bed]("place")
+      - Go to the [bookcase]("place")
+      - navigate to the [dining table]("place")
+      - Navigate to the [bookcase]("place")
+      - Navigate to the [living shelf]("place")
+      - navigate to the [sideshelf]("place")
+      - navigate to the [desk]("place")
+      - Please navigate to the [bookcase]("place")
+      - Please navigate to the [bedside]("place")
+      - navigate to the [bookcase]("place")
+      - Robot please go to the [TV stand]("place")
+      - navigate to the [sideshelf]("place")
+      - and go to the [bookcase]("place")
+      - navigate to the [desk]("place")
+      - Go to the [sideshelf]("place")
+      - go to the [bar]("place")
+
+  - intent: take_the_object
+    examples: |
+      - get the [tea]("object")
+      - take the [coke]("object")
+      - grasp the [pringles]("object")
+      - pick up the [tea]("object")
+      - get the [beer]("object")
+      - get the [bisquits]("object")
+
+  - intent: take_object_from_the_placement
+    examples: |
+      - pick up the [pringles]("object") from the [cupboard]("place")
+      - take the [beer]("object") from the [living table]("place")
+      - Get the [soap]("object") from the [sideshelf]("place")
+      - take the [coke]("object") from the [bedside]("place")
+      - Pick up the [beer]("object") from the [bedside]("place")
+      - Pick up the [tea]("object") from the [living shelf]("place")
+      - get the [bisquits]("object") from the [cupboard]("place")
+      - Pick up the [pringles]("object") from the [drawer]("place")
+      - take the [beer]("object") from the [living shelf]("place")
+      - Pick up the [beer]("object") from the [bookcase]("place")
+      - Robot please get the [tea]("object") from the [drawer]("place")
+      - Robot please take the [baby sweets]("object") from the [drawer]("place")
+      - and grasp the [pringles]("object") from the [bedside]("place")
+      - grasp the [chips]("object") from the [living shelf]("place")
+      - and get the [pringles]("object") from the [cabinet]("place")
+      - Could you please get the [choco syrup]("object") from the [bedside]("place")
+
+  - intent: place_on_placement
+    examples: |
+      - and put it on the [bookcase]("place")
+      - deliver it on the [TV stand]("place")
+      - place it on the [bookcase]("place")
+
+  - intent: deliver_it_to_me
+    examples: |
+      - deliver it to me
+      - bring it to me
+      - and hand it to me
+      - and give it to me
+      - hand it to me
+      - give it to me
+
+  - intent: deliver_to_name
+    examples: |
+      - hand it to [James]("name")
+      - give it to [Noah]("name")
+      - deliver it to [Angel]("name")
+
+  - intent: deliver_it_to_name_in_place
+    examples: |
+      - hand it to [Daniel]("name") in the [cabinet]("place")
+      - deliver it to [Emily]("name") in the [desk]("place")
+      - bring it to [Robin]("name") in the [bed]("place")
+      - and hand it to [Liam]("name") in the [sink]("place")
+      - hand it to [Robin]("name") in the [desk]("place")
+      - give it to [Emily]("name") in the [bed]("place")
+      - and give it to [Ethan]("name") in the [desk]("place")
+      - give it to [Ethan("name")] in the [dining table]("place")
+
+  - intent: find_name
+    examples: |
+      - look for [Alexander]("name")
+      - find [Noah]("name")
+      - look for [Liam]("name")
+      - locate [Michael]("name")
+      - locate [Ethan]("name")
+
+  - intent: find_name_in_place
+    examples: |
+      - Locate [William]("name") in the  [TV stand]("place")
+      - locate [Jacob]("name") in the [dining table]("place")
+      - Look for [Ava]("name") in the [sink]("place")
+      - Locate [Alexander]("name") in the [cabinet]("place")
+      - look for [Sophia]("name") in the [bed]("place")
+      - locate [Charlotte]("name") in the desk
+      - Look for [Jacob]("name") in the [living table]("place")
+      - find [Sophia]("name") in the [bed]("place")
+      - and look for [Angel]("name") in the [TV stand] ("place")
+      - Look for [Angel]("name") in the [cabinet}("place")
+      - Please find [Sophia]("name") in the [sink]("place")
+      - and look for [Ava]("name") in the [bed]("place")
+
+  - intent: speak
+    examples: |
+      - say the day of the month
+      - and tell what day is today
+      - Tell the time
+      - say what day is today
+      -Could you please say a joke
+      -and tell the day of the month
+      -Please say your team's country
+      -say the time
+
+  - intent: answer_question
+    examples: |
+      - answer a question
+      - and answer a question
+      - tell me the answer to a question
+      - give me the answer to a question
+

@@ -1,0 +1,29 @@
+
+# Each intention will have its own specific set of instructions
+Intention_name:
+  # The verbal response will be liste for the robot to respond with
+  verbal_response:
+    -this is something for the robot to say
+  # The instruction set will list each individual instruction in order from top to bottom
+  Instruction_set:
+    - this is the first instruction
+    - this is the second
+    - this is the third
+  # The entity instructions action is for any specific extra steps for the enitity
+  Entity_Instructions:
+    -this is special instructions for the enitities
+
+# Each intention will have its own specific set of instructions
+Intention_name2:
+  # The verbal response will be liste for the robot to respond with
+  verbal_response:
+    -this is something for the robot to say
+  # The instruction set will list each individual instruction in order from top to bottom
+  Instruction_set:
+    - this is the first instruction in the second intention slot
+    - this is the second
+    - this is the third
+  # The entity instructions action is for any specific extra steps for the enitity
+  Entity_Instructions:
+    -this is special instructions for the enitities
+
