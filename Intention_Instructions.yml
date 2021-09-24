@@ -9,21 +9,159 @@ Intention_name:
     - this is the first instruction
     - this is the second
     - this is the third
-  # The entity instructions action is for any specific extra steps for the enitity
+  Expected_Entities:
+    -thse are for the expected entities to find within the intention
+  # The entity instructions action is for any specific extra steps for the entity
   Entity_Instructions:
     -this is special instructions for the enitities
 
-# Each intention will have its own specific set of instructions
-Intention_name2:
-  # The verbal response will be liste for the robot to respond with
+#Copy paste template
+#Intention_name:
+#  verbal_response:
+#  Instruction_set:
+#  Expected_Entities:
+#  Entity_Instructions:
+
+
+# Category 1 Intentions
+
+answer_question:
   verbal_response:
-    -this is something for the robot to say
-  # The instruction set will list each individual instruction in order from top to bottom
+    -You have asked a question which I hope I can answer, although im not smart enough for that yet
   Instruction_set:
-    - this is the first instruction in the second intention slot
-    - this is the second
-    - this is the third
-  # The entity instructions action is for any specific extra steps for the enitity
+    -Lookup question
+    -Tell answer
+  Expected_Entities:
+    -Null
   Entity_Instructions:
-    -this is special instructions for the enitities
+    -Null
 
+speak:
+  verbal_response:
+    -I will tell you that
+  Instruction_set:
+    -process question
+    -tell answer
+  Expected_Entities:
+    -Null
+  Entity_Instructions:
+    -Null
+
+find_name_in_place:
+  verbal_response:
+    -I will try to find [name] in the place [place]
+  Instruction_set:
+    -Look for [place]
+    -Go to [place]
+    -Look for [name]
+    -Go to [name]
+  Expected_Entities:
+    -[name]
+    -[place]
+  Entity_Instructions:
+    -Identify [place]
+    -Identify [name]
+
+find_name:
+  verbal_response:
+    -I will try to find [name]
+  Instruction_set:
+    -Look for [name]
+    -Go to [name]
+  Expected_Entities:
+    -[name]
+  Entity_Instructions:
+    -Identify[name]
+
+deliver_it_to_name_in_place:
+  verbal_response:
+    -I will deliver the object [object] to [name] in the place [place]
+  Instruction_set:
+    -Look for [object]
+    -Go to [object]
+    -take [object]
+    -Look for [name] in [place]
+    -Go to [name] in [place]
+    -give [name] the [object]
+  Expected_Entities:
+    -[name]
+    -[place]
+    -[object]
+  Entity_Instructions:
+    -Identify [name]
+    -Identify [place]
+    -Identify [object]
+
+deliver_to_name:
+  verbal_response:
+    -I will deliver to [name]
+  Instruction_set:
+    -Look for [name]
+    -go to [name]
+    -deliver
+  Expected_Entities:
+    -Null
+  Entity_Instructions:
+    -Null
+
+deliver_it_to_me:
+  verbal_response:
+    -I will deliver to you
+  Instruction_set:
+    -locate speaker
+    -go to speaker
+    -deliver
+  Expected_Entities:
+    -null
+  Entity_Instructions:
+    -null
+
+place_on_placement:
+  verbal_response:
+    -I will place it on the place [place]
+  Instruction_set:
+    -locate [place]
+    -go to [place]
+    -deliver on [place]
+  Expected_Entities:
+    -[place]
+  Entity_Instructions:
+    -Identify [place]
+
+take_object_from_the_placement:
+  verbal_response:
+    -I will take the object [object] from the place [place]
+  Instruction_set:
+    -locate [place]
+    -go to [place]
+    -locate [object]
+    -take [object] from [place]
+  Expected_Entities:
+    -[object]
+    -[place]
+  Entity_Instructions:
+    -Identify [place]
+    -Identify [object]
+
+take_the_object:
+  verbal_response:
+    -I will take the object [object]
+  Instruction_set:
+    -locate [object]
+    -go to [object]
+    -take [object]
+  Expected_Entities:
+    -[object]
+  Entity_Instructions:
+    -Identify [object]
+
+go_to_place:
+  verbal_response:
+    -I will go to the place [place]
+  Instruction_set:
+    -locate [place]
+    -go to [place]
+  Expected_Entities:
+    -[place]
+  Entity_Instructions:
+    -Identify [place]
