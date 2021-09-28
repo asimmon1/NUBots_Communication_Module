@@ -43,6 +43,8 @@ def process(text):
 
     print("Intention found: ")
     print(model_output["intent"]["name"])
+
+
         # Send to Output
 
 main()

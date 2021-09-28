@@ -50,4 +50,3 @@ def respond(model_output):
     engine.say("Initiating sequence" + intent+entities)
     engine.runAndWait()
 
-#
