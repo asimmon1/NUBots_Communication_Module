@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4299cc93-bc6a-4ecd-8bc0-b905cad35e3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommunicationDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/CommunicationDriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OutputModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/OutputModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/new_audio.wav" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +153,7 @@
       <updated>1632372747902</updated>
       <workItem from="1632372749870" duration="3683000" />
       <workItem from="1632441326890" duration="13775000" />
-      <workItem from="1632825167773" duration="4439000" />
+      <workItem from="1632825167773" duration="6314000" />
     </task>
     <servers />
   </component>
@@ -162,38 +165,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632439847375" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1632829677757">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1632874277711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632829677757" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1632829677757">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874277711" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1632874277711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632829677757" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1632829677757">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874277711" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1632874277711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632829677757" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1632829677757">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874277711" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1632874277711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632829677757" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632828965605">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874277711" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1632874279131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632828965605" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1632828965604">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874279131" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1632874279131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632828965604" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1632828965604">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874279131" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1632874279131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632828965604" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1632828965605">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874279131" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1632874279131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632828965605" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632874279131" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1632441234142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -215,14 +218,39 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CommunicationDriver.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/OutputModule.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OutputModule.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="6" />
+          <line>69</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OutputModule.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OutputModule.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OutputModule.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OutputModule.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OutputModule.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -230,7 +258,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NUBots_Communication_Module$ASRModuleV1.coverage" NAME="ASRModuleV1 Coverage Results" MODIFIED="1632446228812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NUBots_Communication_Module$NLUAnalyser.coverage" NAME="NLUAnalyser Coverage Results" MODIFIED="1632444760825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$OutputModule.coverage" NAME="OutputModule Coverage Results" MODIFIED="1632829677746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$CommunicationDriver.coverage" NAME="CommunicationDriver Coverage Results" MODIFIED="1632828755791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$OutputModule.coverage" NAME="OutputModule Coverage Results" MODIFIED="1632874277571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$CommunicationDriver.coverage" NAME="CommunicationDriver Coverage Results" MODIFIED="1632874101089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

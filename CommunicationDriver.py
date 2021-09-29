@@ -44,7 +44,9 @@ def process(text):
     print("Intention found: ")
     print(model_output["intent"]["name"])
 
-
+    print("Instruction set generated: ")
+    print(OutputModule.process(model_output))
+    OutputModule.verbally_respond(model_output)
         # Send to Output
 
 main()
