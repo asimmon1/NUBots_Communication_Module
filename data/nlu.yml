@@ -610,6 +610,7 @@ nlu:
         - Please locate [Isabella]("name") in the [bedroom]("room")
 
 
+
   - intent: follow_name_who_is_at_place
     examples: |
         - and follow [Mason]("name") who is at the [dining table]("place")

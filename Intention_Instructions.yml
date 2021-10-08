@@ -1,7 +1,7 @@
 
 # Each intention will have its own specific set of instructions
 Intention_name:
-  # The verbal response will be liste for the robot to respond with
+  # The verbal response will be listed for the robot to respond with
   verbal_response:
     -this is something for the robot to say
   # The instruction set will list each individual instruction in order from top to bottom

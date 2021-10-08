@@ -1,13 +1,68 @@
 version: "2.0"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+    - take_object_from_the_placement+place_on_placement
+    - find_name_in_place+go_to_place
+    - go_to_place+take_object_from_the_placement+deliver_it_to_me
+    - go_to_place+take_object_from_the_placement+deliver_it_to_name_in_place
+    - take_object_from_the_placement+deliver_it_to_me+answer_question
+    - take_object_from_the_placement+deliver_it_to_name_in_place+answer_question
+    - take_object_from_the_placement+deliver_it_to_name_in_place+follow_them
+    - take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_room
+    - take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_place
+    - place_object_in_placement+find_name_in_room+answer_question
+    - find_object_in_room+place_on_placement
+    - find_object_in_room+deliver_it_to_me
+    - find_object_in_room+deliver_it_to_name_in_place
+    - find_them_in_place+guide_them_to_the_room
+    - find_them_in_place+guide_them_to_the_place
+    - take_object_from_the_placement+place_object_in_placement
+    - find_object_in_room+place_object_in_placement
+    - find_object_in_room+deliver_it_to_me
+    - find_object_in_room+deliver_it_to_name_in_place
+    - find_name_in_place+answer_question
+    - find_name_in_room+answer_question
+    - find_gesture_person_in_room+follow_them
+    - find_name_in_room+follow_them
+    - find_gesture_person_in_room+guide_them_to_the_room
+    - find_name_in_place+guide_them_to_the_room
+    - find_gesture_person_in_room+guide_them_to_the_place
+    - find_name_in_place+guide_them_to_the_place
+    - take_object_from_the_placement+deliver_it_to_me
+    - take_object_from_the_placement+deliver_it_to_name_in_place
+    - find_name_in_place+answer_question
+    - go_to_place+take_the_object+place_on_placement
+    - go_to_place+take_the_object+deliver_it_to_me
+    - go_to_place+take_the_object+deliver_it_to_name_in_place
+    - take_object_from_the_placement+go_to_place+deliver_to_name
+    - go_to_place+find_name_in_place+answer_question
+    - take_object_from_the_placement+deliver_it_to_me+answer_question
+    - take_object_from_the_placement+deliver_it_to_name_in_place+answer_question
+    - find_object_in_room
+    - place_object_in_placement
+    - find_name_in_place
+    - find_them_in_place
+    - find_gesture_person_in_room
+    - find_name_in_room
+    - follow_name_who_is_at_place
+    - follow_them
+    - guide_name_from_place_to_room
+    - guide_name_from_place_to_place
+    - guide_them_to_the_room
+    - guide_them_to_the_place
+    - go_to_place
+    - take_the_object
+    - take_object_from_the_placement
+    - place_on_placement
+    - deliver_it_to_me
+    - deliver_to_name
+    - deliver_it_to_name_in_place
+    - find_name
+    - find_name_in_place
+    - speak
+    - answer_question
+
+
 
 responses:
   utter_greet:

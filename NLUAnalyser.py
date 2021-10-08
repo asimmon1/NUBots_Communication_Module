@@ -7,13 +7,13 @@ interpreter = Interpreter.load(rasa_model_path)
 
 
 
-
-
 def rasa_output(text):
     print(text)
     message = str(text).strip()
     #print("message: " + str(text) + " stripped: " + message)
     result = interpreter.parse(message)
+
+
     return result
 
 
@@ -50,3 +50,5 @@ def respond(model_output):
     engine.say("Initiating sequence" + intent+entities)
     engine.runAndWait()
 
+
+manual_input_loop()
