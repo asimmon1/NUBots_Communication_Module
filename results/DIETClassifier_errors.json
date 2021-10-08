@@ -1,5 +1,1196 @@
 [
   {
+    "text": "Pick up the [bisquits] from the bookcase put it on the cupboard",
+    "entities": [
+      {
+        "start": 32,
+        "end": 40,
+        "value": "bookcase",
+        "entity": "\"place\""
+      },
+      {
+        "start": 55,
+        "end": 63,
+        "value": "cupboard",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"object\"",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.9998730421066284,
+        "value": "bisquits",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 32,
+        "end": 40,
+        "confidence_entity": 0.9997300505638123,
+        "value": "bookcase",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 55,
+        "end": 63,
+        "confidence_entity": 0.9999749660491943,
+        "value": "cupboard",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Get the baby sweets from the sink hand it to James in the desk and take him to the Kitchen",
+    "entities": [
+      {
+        "start": 8,
+        "end": 19,
+        "value": "baby sweets",
+        "entity": "\"object\""
+      },
+      {
+        "start": 29,
+        "end": 33,
+        "value": "sink",
+        "entity": "\"place\""
+      },
+      {
+        "start": 45,
+        "end": 50,
+        "value": "James",
+        "entity": "\"name\""
+      },
+      {
+        "start": 58,
+        "end": 62,
+        "value": "desk",
+        "entity": "\"place\""
+      },
+      {
+        "start": 83,
+        "end": 90,
+        "value": "Kitchen",
+        "entity": "\"room\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"object\"",
+        "start": 8,
+        "end": 19,
+        "confidence_entity": 0.9992008805274963,
+        "value": "baby sweets",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 29,
+        "end": 33,
+        "confidence_entity": 0.9987711310386658,
+        "value": "sink",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"name\"",
+        "start": 45,
+        "end": 50,
+        "confidence_entity": 0.999993085861206,
+        "value": "James",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 58,
+        "end": 62,
+        "confidence_entity": 0.9998608827590942,
+        "value": "desk",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 83,
+        "end": 90,
+        "confidence_entity": 0.5051724314689636,
+        "value": "Kitchen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Robot please look for a choco syrup in the dining room put it on the bookcase",
+    "entities": [
+      {
+        "start": 24,
+        "end": 35,
+        "value": "choco syrup",
+        "entity": "\"object\""
+      },
+      {
+        "start": 43,
+        "end": 54,
+        "value": "dining room",
+        "entity": "\"place\""
+      },
+      {
+        "start": 69,
+        "end": 77,
+        "value": "bookcase",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"object\"",
+        "start": 24,
+        "end": 35,
+        "confidence_entity": 0.9989343285560608,
+        "value": "choco syrup",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 43,
+        "end": 54,
+        "confidence_entity": 0.9972220659255981,
+        "value": "dining room",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 69,
+        "end": 77,
+        "confidence_entity": 0.999850869178772,
+        "value": "bookcase",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Please locate the rising left arm person in the dining room follow him",
+    "entities": [
+      {
+        "start": 18,
+        "end": 29,
+        "value": "rising left",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 48,
+        "end": 59,
+        "value": "dining room",
+        "entity": "\"room\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.6880627274513245,
+        "value": "rising left arm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 48,
+        "end": 59,
+        "confidence_entity": 0.996892511844635,
+        "value": "dining room",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you please find the rising left arm person in the bedroom and escort him to the living room",
+    "entities": [
+      {
+        "start": 26,
+        "end": 37,
+        "value": "rising left",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 56,
+        "end": 63,
+        "value": "bedroom",
+        "entity": "\"room\""
+      },
+      {
+        "start": 86,
+        "end": 97,
+        "value": "living room",
+        "entity": "\"room\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 26,
+        "end": 41,
+        "confidence_entity": 0.5672271251678467,
+        "value": "rising left arm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 56,
+        "end": 63,
+        "confidence_entity": 0.9997726082801819,
+        "value": "bedroom",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 86,
+        "end": 97,
+        "confidence_entity": 0.9954322576522827,
+        "value": "living room",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you please look for the rising right arm person in the dining room and escort him to the office",
+    "entities": [
+      {
+        "start": 30,
+        "end": 42,
+        "value": "rising right",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 61,
+        "end": 72,
+        "value": "dining room",
+        "entity": "\"room\""
+      },
+      {
+        "start": 95,
+        "end": 101,
+        "value": "office",
+        "entity": "\"room\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 30,
+        "end": 46,
+        "confidence_entity": 0.7735792994499207,
+        "value": "rising right arm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 61,
+        "end": 72,
+        "confidence_entity": 0.9838201999664307,
+        "value": "dining room",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 95,
+        "end": 101,
+        "confidence_entity": 0.9966650605201721,
+        "value": "office",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you locate the rising left arm person in the corridor guide him to the exit",
+    "entities": [
+      {
+        "start": 21,
+        "end": 32,
+        "value": "rising left",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 51,
+        "end": 59,
+        "value": "corridor",
+        "entity": "\"room\""
+      },
+      {
+        "start": 77,
+        "end": 81,
+        "value": "exit",
+        "entity": "\"room\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 21,
+        "end": 36,
+        "confidence_entity": 0.7478875517845154,
+        "value": "rising left arm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 51,
+        "end": 59,
+        "confidence_entity": 0.9998063445091248,
+        "value": "corridor",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 77,
+        "end": 81,
+        "confidence_entity": 0.7656970620155334,
+        "value": "exit",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you please look for the rising right arm person in the Kitchen and guide her to the dining table",
+    "entities": [
+      {
+        "start": 30,
+        "end": 46,
+        "value": "rising right arm",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 61,
+        "end": 68,
+        "value": "Kitchen",
+        "entity": "\"room\""
+      },
+      {
+        "start": 97,
+        "end": 102,
+        "value": "table",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 30,
+        "end": 46,
+        "confidence_entity": 0.6735715270042419,
+        "value": "rising right arm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 61,
+        "end": 68,
+        "confidence_entity": 0.9992413520812988,
+        "value": "Kitchen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 90,
+        "end": 102,
+        "confidence_entity": 0.9291852116584778,
+        "value": "dining table",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Please look for the waving person in the kitchen and escort her to the exit",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "waving",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 41,
+        "end": 48,
+        "value": "kitchen",
+        "entity": "\"room\""
+      },
+      {
+        "start": 71,
+        "end": 75,
+        "value": "exit",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.9947277903556824,
+        "value": "waving",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 41,
+        "end": 48,
+        "confidence_entity": 0.9995017051696777,
+        "value": "kitchen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 71,
+        "end": 75,
+        "confidence_entity": 0.9905005693435669,
+        "value": "exit",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you please locate the waving person in the office and escort him to the TV stand",
+    "entities": [
+      {
+        "start": 28,
+        "end": 34,
+        "value": "waving",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 49,
+        "end": 55,
+        "value": "office",
+        "entity": "\"room\""
+      },
+      {
+        "start": 78,
+        "end": 86,
+        "value": "TV stand",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.9974356293678284,
+        "value": "waving",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 49,
+        "end": 55,
+        "confidence_entity": 0.9998679161071777,
+        "value": "office",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 78,
+        "end": 86,
+        "confidence_entity": 0.983029305934906,
+        "value": "TV stand",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Locate the waving person in the living room and escort her to the exit",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "waving",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 32,
+        "end": 43,
+        "value": "living room",
+        "entity": "\"room\""
+      },
+      {
+        "start": 66,
+        "end": 70,
+        "value": "exit",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9797301292419434,
+        "value": "waving",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 32,
+        "end": 43,
+        "confidence_entity": 0.9947761297225952,
+        "value": "living room",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 66,
+        "end": 70,
+        "confidence_entity": 0.9780564308166504,
+        "value": "exit",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you please look for the rising right arm person in the corridor and escort her to the living room",
+    "entities": [
+      {
+        "start": 30,
+        "end": 46,
+        "value": "rising right arm",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 61,
+        "end": 69,
+        "value": "corridor",
+        "entity": "\"room\""
+      },
+      {
+        "start": 92,
+        "end": 103,
+        "value": "living room",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 30,
+        "end": 46,
+        "confidence_entity": 0.7371032238006592,
+        "value": "rising right arm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 61,
+        "end": 69,
+        "confidence_entity": 0.9992293119430542,
+        "value": "corridor",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 92,
+        "end": 103,
+        "confidence_entity": 0.9976962208747864,
+        "value": "living room",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Robot please find Ethan in the TV stand and guide him to the bedroom",
+    "entities": [
+      {
+        "start": 18,
+        "end": 23,
+        "value": "Ethan",
+        "entity": "\"name\""
+      },
+      {
+        "start": 31,
+        "end": 39,
+        "value": "TV stand",
+        "entity": "\"place\""
+      },
+      {
+        "start": 61,
+        "end": 68,
+        "value": "bedroom",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"name\"",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.9971670508384705,
+        "value": "Ethan",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 31,
+        "end": 39,
+        "confidence_entity": 0.9983730316162109,
+        "value": "TV stand",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 61,
+        "end": 68,
+        "confidence_entity": 0.9998784065246582,
+        "value": "bedroom",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Navigate to the sideshelf take the coke and deliver it to Emma in the living table",
+    "entities": [
+      {
+        "start": 16,
+        "end": 25,
+        "value": "sideshelf",
+        "entity": "\"place\""
+      },
+      {
+        "start": 35,
+        "end": 39,
+        "value": "coke",
+        "entity": "\"place\""
+      },
+      {
+        "start": 58,
+        "end": 62,
+        "value": "Emma",
+        "entity": "\"name\""
+      },
+      {
+        "start": 70,
+        "end": 82,
+        "value": "living table",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"place\"",
+        "start": 16,
+        "end": 25,
+        "confidence_entity": 0.9916568994522095,
+        "value": "sideshelf",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"object\"",
+        "start": 35,
+        "end": 39,
+        "confidence_entity": 0.9998490810394287,
+        "value": "coke",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"name\"",
+        "start": 58,
+        "end": 62,
+        "confidence_entity": 0.9999922513961792,
+        "value": "Emma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 70,
+        "end": 82,
+        "confidence_entity": 0.9999573230743408,
+        "value": "living table",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Navigate to the living shelf get the soap and give it to Mason in the sink",
+    "entities": [
+      {
+        "start": 16,
+        "end": 28,
+        "value": "living shelf",
+        "entity": "\"place\""
+      },
+      {
+        "start": 37,
+        "end": 41,
+        "value": "soap",
+        "entity": "\"place\""
+      },
+      {
+        "start": 57,
+        "end": 62,
+        "value": "Mason",
+        "entity": "\"name\""
+      },
+      {
+        "start": 70,
+        "end": 74,
+        "value": "sink",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"place\"",
+        "start": 16,
+        "end": 28,
+        "confidence_entity": 0.999238133430481,
+        "value": "living shelf",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"object\"",
+        "start": 37,
+        "end": 41,
+        "confidence_entity": 0.9997660517692566,
+        "value": "soap",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"name\"",
+        "start": 57,
+        "end": 62,
+        "confidence_entity": 0.9999741315841675,
+        "value": "Mason",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 70,
+        "end": 74,
+        "confidence_entity": 0.9904544949531555,
+        "value": "sink",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Go to the drawer get the coke and give it to Emma in the sink",
+    "entities": [
+      {
+        "start": 10,
+        "end": 16,
+        "value": "drawer",
+        "entity": "\"place\""
+      },
+      {
+        "start": 25,
+        "end": 29,
+        "value": "coke",
+        "entity": "\"place\""
+      },
+      {
+        "start": 45,
+        "end": 49,
+        "value": "Emma",
+        "entity": "\"name\""
+      },
+      {
+        "start": 57,
+        "end": 61,
+        "value": "sink",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"place\"",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9990677237510681,
+        "value": "drawer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"object\"",
+        "start": 25,
+        "end": 29,
+        "confidence_entity": 0.9997712969779968,
+        "value": "coke",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"name\"",
+        "start": 45,
+        "end": 49,
+        "confidence_entity": 0.9999924898147583,
+        "value": "Emma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 57,
+        "end": 61,
+        "confidence_entity": 0.9997120499610901,
+        "value": "sink",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Go to the bookcase get the beer and give it to Mason in the desk",
+    "entities": [
+      {
+        "start": 10,
+        "end": 18,
+        "value": "bookcase",
+        "entity": "\"place\""
+      },
+      {
+        "start": 27,
+        "end": 31,
+        "value": "beer",
+        "entity": "\"place\""
+      },
+      {
+        "start": 47,
+        "end": 52,
+        "value": "Mason",
+        "entity": "\"name\""
+      },
+      {
+        "start": 60,
+        "end": 64,
+        "value": "desk",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"place\"",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9976953864097595,
+        "value": "bookcase",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"object\"",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.9998735189437866,
+        "value": "beer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"name\"",
+        "start": 47,
+        "end": 52,
+        "confidence_entity": 0.9999786615371704,
+        "value": "Mason",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 60,
+        "end": 64,
+        "confidence_entity": 0.9998838901519775,
+        "value": "desk",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Please locate her in the dining table",
+    "entities": [
+      {
+        "start": 25,
+        "end": 37,
+        "value": "dining table",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"place\"",
+        "start": 32,
+        "end": 37,
+        "confidence_entity": 0.5326626300811768,
+        "value": "table",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you look for the rising left arm person in the dining room",
+    "entities": [
+      {
+        "start": 23,
+        "end": 34,
+        "value": "rising left",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 53,
+        "end": 64,
+        "value": "dining room",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 23,
+        "end": 38,
+        "confidence_entity": 0.7099778652191162,
+        "value": "rising left arm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 53,
+        "end": 64,
+        "confidence_entity": 0.9787591695785522,
+        "value": "dining room",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you find the pointing right person in the Kitchen",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "pointing right",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 48,
+        "end": 55,
+        "value": "Kitchen",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.9984361529350281,
+        "value": "pointing right",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 48,
+        "end": 55,
+        "confidence_entity": 0.9993164539337158,
+        "value": "Kitchen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Robot please find the rising right arm person in the office",
+    "entities": [
+      {
+        "start": 22,
+        "end": 34,
+        "value": "rising right",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 53,
+        "end": 59,
+        "value": "office",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 22,
+        "end": 34,
+        "confidence_entity": 0.7030808925628662,
+        "value": "rising right",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 53,
+        "end": 59,
+        "confidence_entity": 0.9995416402816772,
+        "value": "office",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Robot please find the pointing right person in the bedroom",
+    "entities": [
+      {
+        "start": 22,
+        "end": 36,
+        "value": "pointing right",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 51,
+        "end": 58,
+        "value": "bedroom",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 22,
+        "end": 36,
+        "confidence_entity": 0.9983550906181335,
+        "value": "pointing right",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 51,
+        "end": 58,
+        "confidence_entity": 0.9992187023162842,
+        "value": "bedroom",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Robot please look for the rising right arm person in the office",
+    "entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "rising right",
+        "entity": "\"gesture\""
+      },
+      {
+        "start": 57,
+        "end": 63,
+        "value": "office",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"gesture\"",
+        "start": 26,
+        "end": 38,
+        "confidence_entity": 0.6322187781333923,
+        "value": "rising right",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 57,
+        "end": 63,
+        "confidence_entity": 0.9978564381599426,
+        "value": "office",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Robot please escort Alexander from the living table to the kitchen",
+    "entities": [
+      {
+        "start": 20,
+        "end": 29,
+        "value": "Alexander",
+        "entity": "\"name\""
+      },
+      {
+        "start": 39,
+        "end": 51,
+        "value": "living table",
+        "entity": "\"place\""
+      },
+      {
+        "start": 59,
+        "end": 66,
+        "value": "kitchen",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"name\"",
+        "start": 20,
+        "end": 29,
+        "confidence_entity": 0.9988752007484436,
+        "value": "Alexander",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 39,
+        "end": 51,
+        "confidence_entity": 0.9997054934501648,
+        "value": "living table",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 59,
+        "end": 66,
+        "confidence_entity": 0.9998631477355957,
+        "value": "kitchen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could you please take James from the cabinet to the kitchen",
+    "entities": [
+      {
+        "start": 22,
+        "end": 27,
+        "value": "James",
+        "entity": "\"name\""
+      },
+      {
+        "start": 37,
+        "end": 44,
+        "value": "cabinet",
+        "entity": "\"place\""
+      },
+      {
+        "start": 52,
+        "end": 59,
+        "value": "kitchen",
+        "entity": "\"place\""
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "\"name\"",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.997005045413971,
+        "value": "James",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"place\"",
+        "start": 37,
+        "end": 44,
+        "confidence_entity": 0.9996976852416992,
+        "value": "cabinet",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "\"room\"",
+        "start": 52,
+        "end": 59,
+        "confidence_entity": 0.9998986721038818,
+        "value": "kitchen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
     "text": "Hand it to Angel in the [bed]",
     "entities": [
       {

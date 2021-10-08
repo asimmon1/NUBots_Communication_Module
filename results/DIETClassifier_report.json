@@ -1,41 +1,60 @@
 {
+  "\"room\"": {
+    "precision": 0.8776978417266187,
+    "recall": 0.991869918699187,
+    "f1-score": 0.9312977099236641,
+    "support": 123,
+    "confused_with": {
+      "\"place\"": 1
+    }
+  },
+  "\"place\"": {
+    "precision": 0.974293059125964,
+    "recall": 0.9451371571072319,
+    "f1-score": 0.959493670886076,
+    "support": 401,
+    "confused_with": {
+      "\"room\"": 17,
+      "\"object\"": 4
+    }
+  },
   "\"name\"": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 15,
+    "support": 143,
     "confused_with": {}
   },
-  "\"place\"": {
-    "precision": 0.7241379310344828,
+  "\"gesture\"": {
+    "precision": 0.8837209302325582,
     "recall": 1.0,
-    "f1-score": 0.8400000000000001,
-    "support": 21,
+    "f1-score": 0.9382716049382717,
+    "support": 38,
     "confused_with": {}
   },
   "\"object\"": {
-    "precision": 1.0,
+    "precision": 0.9673202614379085,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 9,
+    "f1-score": 0.9833887043189369,
+    "support": 148,
     "confused_with": {}
   },
   "micro avg": {
-    "precision": 0.8490566037735849,
-    "recall": 1.0,
-    "f1-score": 0.9183673469387755,
-    "support": 45
+    "precision": 0.9573241061130334,
+    "recall": 0.9730363423212193,
+    "f1-score": 0.9651162790697674,
+    "support": 853
   },
   "macro avg": {
-    "precision": 0.9080459770114943,
-    "recall": 1.0,
-    "f1-score": 0.9466666666666667,
-    "support": 45
+    "precision": 0.9406064185046098,
+    "recall": 0.9874014151612837,
+    "f1-score": 0.9624903380133898,
+    "support": 853
   },
   "weighted avg": {
-    "precision": 0.8712643678160921,
-    "recall": 1.0,
-    "f1-score": 0.9253333333333333,
-    "support": 45
+    "precision": 0.9594292441776474,
+    "recall": 0.9730363423212193,
+    "f1-score": 0.9654190264628184,
+    "support": 853
   }
 }
