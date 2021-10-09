@@ -6,17 +6,6 @@ nlu:
 
   #Complex commands have not yet been accounted for. ===================================================================
   # Custom defined Categories
-  - intent: take_object_from_the_placement+place_on_placement
-    examples: |
-      - Get the [tea]("object") from the [sink]("place") deliver it on the [bookcase]("place")
-      - Pick up the [beer]("object") from the [drawer]("place") put it on the [cabinet]("place")
-      - Grasp the [tea]("object") from the [sink]("place") place it on the [drawer]("place")
-      - Pick up the [coke]("object") from the [cabinet]("place") put it on the [drawer]("place")
-
-  - intent: find_name_in_place+go_to_place
-    examples: |
-      - look for [Ethan]("name") in the [dining table]("place") and escort him to the [TV stand]("place")
-      - Please find [Emma]("name") in the [living table]("place") and escort her to the [dining table]("place")
 
   - intent: go_to_place+take_object_from_the_placement+deliver_it_to_me
     examples: |
@@ -233,7 +222,7 @@ nlu:
 
     # double defined commands
     # go and get it
-  - intent: take_object_from_the_placement+place_object_in_placement
+  - intent: take_object_from_the_placement+place_on_placement
     examples: |
       - Robot please take the [coconut milk]("object") from the [bedside]("place") and deliver it on the [drawer]("place")
       -Could you please grasp the [bisquits]("object") from the [bookcase]("place") and deliver it on the [bookcase]("place")
@@ -250,8 +239,12 @@ nlu:
       -Please pick up the [coke]("object") from the [dining table]("place") and deliver it on the [TV stand]("place")
       -Get the [chips]("object") from the [bar]("place") and place it on the [cupboard]("place")
       -Robot please pick up the [chips]("object") from the [desk]("place") and deliver it on the [sink]("place")
+      - Get the [tea]("object") from the [sink]("place") deliver it on the [bookcase]("place")
+      - Pick up the [beer]("object") from the [drawer]("place") put it on the [cabinet]("place")
+      - Grasp the [tea]("object") from the [sink]("place") place it on the [drawer]("place")
+      - Pick up the [coke]("object") from the [cabinet]("place") put it on the [drawer]("place")
 
-  - intent: find_object_in_room+place_object_in_placement
+  - intent: find_object_in_room+place_on_placement
     examples: |
       - Please look for a [apple]("object") in the [office]("room") and deliver it on the [living shelf]("place")
       - Could you look for a [apple]("object") in the [kitchen]("room") and place it on the [bookcase]("place")
@@ -608,7 +601,6 @@ nlu:
         - Please locate [Liam]("name") in the [corridor]("room")
         - Robot please look for [Michael]("name") in the [corridor]("room")
         - Please locate [Isabella]("name") in the [bedroom]("room")
-
 
 
   - intent: follow_name_who_is_at_place

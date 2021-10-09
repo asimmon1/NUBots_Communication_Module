@@ -1,4 +1,25 @@
 {
+  "\"gesture\"": {
+    "precision": 0.8837209302325582,
+    "recall": 1.0,
+    "f1-score": 0.9382716049382717,
+    "support": 38,
+    "confused_with": {}
+  },
+  "\"name\"": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 143,
+    "confused_with": {}
+  },
+  "\"object\"": {
+    "precision": 0.9673202614379085,
+    "recall": 1.0,
+    "f1-score": 0.9833887043189369,
+    "support": 148,
+    "confused_with": {}
+  },
   "\"room\"": {
     "precision": 0.8776978417266187,
     "recall": 0.991869918699187,
@@ -18,27 +39,6 @@
       "\"object\"": 4
     }
   },
-  "\"name\"": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 143,
-    "confused_with": {}
-  },
-  "\"gesture\"": {
-    "precision": 0.8837209302325582,
-    "recall": 1.0,
-    "f1-score": 0.9382716049382717,
-    "support": 38,
-    "confused_with": {}
-  },
-  "\"object\"": {
-    "precision": 0.9673202614379085,
-    "recall": 1.0,
-    "f1-score": 0.9833887043189369,
-    "support": 148,
-    "confused_with": {}
-  },
   "micro avg": {
     "precision": 0.9573241061130334,
     "recall": 0.9730363423212193,
@@ -52,9 +52,9 @@
     "support": 853
   },
   "weighted avg": {
-    "precision": 0.9594292441776474,
+    "precision": 0.9594292441776476,
     "recall": 0.9730363423212193,
-    "f1-score": 0.9654190264628184,
+    "f1-score": 0.9654190264628185,
     "support": 853
   }
 }

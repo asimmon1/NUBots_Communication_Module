@@ -5,20 +5,8 @@ nlu:
   # multi-intent handling ==============================================================================================
 
   #Complex commands have not yet been accounted for. ===================================================================
+  -
   # Custom defined Categories
-  - intent: take_object_from_the_placement+place_on_placement
-    examples: |
-      - Pick up the [coke]("object") from the [bookcase]("place") place it on the [dining table]("place")
-      - Pick up the [bisquits]("object") from the [dining table]("place") deliver it on the [bookcase]("place")
-      - Get the [bisquits]("object") from the [sideshelf]("place") deliver it on the [TV stand]("place")
-      - Pick up the [beer]("object") from the [bar]("place") deliver it on the [bedside]("place")
-      - Pick up the [bisquits] from the [bookcase]("place") put it on the [cupboard]("place")
-
-
-  - intent: find_name_in_place+go_to_place
-    examples: |
-      - look for [Angel]("name") in the [table]("place") and guide him to the [TV stand]("place")
-      - Please find [Ethan]("name") at the [living table]("place") and bring her to the [dining table]("place")
 
   - intent: go_to_place+take_object_from_the_placement+deliver_it_to_me
     examples: |
@@ -117,7 +105,7 @@ nlu:
       - Find a [soap]("object") in the [bedroom]("room") and hand it to [Michael]("name") in the [living table]("place")
 
 
-  - intent: find_them_in_place+guide_them_to_the_room
+  - intent: find_name_in_place+guide_them_to_the_room
     examples: |
       - Could you please look for [Daniel]("name") in the [cabinet]("place") and escort him to the [dining room]("room")
       - Could you look for [Ethan]("name") in the [sink]("place") and escort him to the [dining room]("room")
@@ -126,7 +114,7 @@ nlu:
       - Find [Mason]("name") in the [dining table]("place") and take him to the [corridor]("room")
 
 
-  - intent: find_them_in_place+guide_them_to_the_place
+  - intent: find_name_in_place+guide_them_to_the_place
     examples: |
       - Please look for [Ava]("name") in the [desk]("place") and take her to the [living table]("place")
       - Look for [Liam]("name") in the [bed]("place") and escort him to the [bed]("place")
@@ -139,16 +127,16 @@ nlu:
 
     # double defined commands
     # go and get it
-  - intent: take_object_from_the_placement+place_object_in_placement
+  - intent: take_object_from_the_placement+place_on_placement
     examples: |
       - Robot please grasp the [pringles]("object") from the [bookcase]("place") and put it on the [bar]("place")
-      - Robot please look for a [choco syrup]("object") in the [dining room]("place") put it on the [bookcase]("place")
+      - Robot please look for a [choco syrup]("object") in the [desk]("place") put it on the [bookcase]("place")
       - Robot please get the [shampoo]("object") from the [sideshelf]("place") and deliver it on the [bookcase]("place")
       - Could you grasp the [pumper nickel]("object") from the [sideshel]("place") put it on the [desk]("place")
       - Please get the [tea]("object") from the [cupboard]("place") and place it on the [sideshelf]("place")
 
 
-  - intent: find_object_in_room+place_object_in_placement
+  - intent: find_object_in_room+place_on_placement
     examples: |
       - Please locate a [paprika]("object") in the [bedroom]("room") and deliver it on the [cabinet]("place")
       - Please look for a [chips]("object") in the [living room]("room") and put it on the [bar]("place")
