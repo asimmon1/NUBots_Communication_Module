@@ -5,8 +5,8 @@ nlu:
   # multi-intent handling ==============================================================================================
 
   #Complex commands have not yet been accounted for. ===================================================================
-  -
   # Custom defined Categories
+
 
   - intent: go_to_place+take_object_from_the_placement+deliver_it_to_me
     examples: |
@@ -130,7 +130,7 @@ nlu:
   - intent: take_object_from_the_placement+place_on_placement
     examples: |
       - Robot please grasp the [pringles]("object") from the [bookcase]("place") and put it on the [bar]("place")
-      - Robot please look for a [choco syrup]("object") in the [desk]("place") put it on the [bookcase]("place")
+      - Robot please get the [choco syrup]("object") in the [desk]("place") put it on the [bookcase]("place")
       - Robot please get the [shampoo]("object") from the [sideshelf]("place") and deliver it on the [bookcase]("place")
       - Could you grasp the [pumper nickel]("object") from the [sideshel]("place") put it on the [desk]("place")
       - Please get the [tea]("object") from the [cupboard]("place") and place it on the [sideshelf]("place")
@@ -158,7 +158,7 @@ nlu:
     examples: |
       - Find a [coconut milk]("object") in the [bedroom]("room") bring it to [Madison]("name") in the [TV stand]("place")
       - Find a [tea]("object") in the [Kitchen]("room") deliver it to [Daniel]("name") in the [dining table]("place")
-      - Robot please get the [soap]("object") from the [office]("room") and deliver it to [Noah]("name") in the [living table]("place")
+      - Robot please find the [soap]("object") in the [office]("room") and deliver it to [Noah]("name") in the [living table]("place")
       - Could you please find a [apple]("object") in the [kitchen]("room") hand it to [Liam]("name") in the [bed]("place")
       - Could you locate a [pretzels]("object") in the [dining room]("room") and hand it to [Michael]("name") in the [TV stand]("place")
 
@@ -205,8 +205,8 @@ nlu:
     examples: |
       - Could you please find the [rising left]("gesture") arm person in the [bedroom]("room") and escort him to the [living room]("room")
       - Could you please look for the [rising right]("gesture") arm person in the [dining room]("room") and escort him to the [office]("room")
-      - Please look for the [pointing right]("gesture") person in the [office]("room") escort him to the [bed]("room")
-      - Could you locate the [rising left]("gesture") arm person in the [corridor]("room") guide him to the [exit]("room")
+      - Please look for the [pointing right]("gesture") person in the [office]("room") escort him to the [bedroom]("room")
+      - Could you locate the [rising left]("gesture") arm person in the [corridor]("room") guide him to the [kitchen]("room")
       - Robot please look for the [waving]("gesture") person in the [corridor]("room") escort him to the [living room]("room")
 
 
@@ -225,14 +225,14 @@ nlu:
       - Please look for the [waving]("gesture") person in the [kitchen]("room") and escort her to the [exit]("place")
       - Could you please locate the [waving]("gesture") person in the [office]("room") and escort him to the [TV stand]("place")
       - Locate the [waving]("gesture") person in the [living room]("room") and escort her to the [exit]("place")
-      - Could you please look for the [rising right arm]("gesture") person in the [corridor]("room") and escort her to the [living room]("place")
+      - Could you please look for the [rising right arm]("gesture") person in the [corridor]("room") and escort her to the [desk]("place")
 
 
   - intent: find_name_in_place+guide_them_to_the_place
     examples: |
       - Could you look for [Noah]("name") in the [living table]("place") and guide him to the [cabinet]("place")
       - Could you please look for [Ethan]("name") in the [living table]("place") and escort him to the [bed]("place")
-      - Robot please find [Ethan]("name") in the [TV stand]("place") and guide him to the [bedroom]("place")
+      - Robot please find [Ethan]("name") in the [TV stand]("place") and guide him to the [desk]("place")
       - Robot please locate [Noah]("name") in the [sink]("place") and guide him to the [dining table]("place")
       - Could you please locate [Mason]("name") in the [dining table]("place") and guide him to the [exit]("place")
 
@@ -291,11 +291,11 @@ nlu:
 
   - intent: go_to_place+take_the_object+deliver_it_to_name_in_place
     examples: |
-      - Navigate to the [sideshelf]("place") take the [coke]("place") and deliver it to [Emma]("name") in the [living table]("place")
-      - Navigate to the [living shelf]("place") get the [soap]("place") and give it to [Mason]("name") in the [sink]("place")
-      - Go to the [drawer]("place") get the [coke]("place") and give it to [Emma]("name") in the [sink]("place")
-      - Navigate to the [sideshelf]("place") take the [coke]("place") and deliver it to [Emma]("name") in the [living table]("place")
-      - Go to the [bookcase]("place") get the [beer]("place") and give it to [Mason]("name") in the [desk]("place")
+      - Navigate to the [sideshelf]("place") take the [coke]("object") and deliver it to [Emma]("name") in the [living table]("place")
+      - Navigate to the [living shelf]("place") get the [soap]("object") and give it to [Mason]("name") in the [sink]("place")
+      - Go to the [drawer]("place") get the [coke]("object") and give it to [Emma]("name") in the [sink]("place")
+      - Navigate to the [sideshelf]("place") take the [coke]("object") and deliver it to [Emma]("name") in the [living table]("place")
+      - Go to the [bookcase]("place") get the [beer]("object") and give it to [Mason]("name") in the [desk]("place")
 
 
   - intent: take_object_from_the_placement+go_to_place+deliver_to_name
@@ -342,11 +342,11 @@ nlu:
 
   - intent: find_object_in_room
     examples: |
-      - Deliver a [chips]("object") on the [desk]("place")
-      - Could you deliver a [baby sweets]("object") on the [sideshelf]("place")
-      - Deliver a [soap]("object") on the [sideshelf]("place")
-      - Robot please put a [choco syrup]("object") on the [sideshelf]("place")
-      - Could you place a [beer]("object") on the [cupboard]("place")
+      - Locate a [pretzels]("object") in the [office]("room")
+      - Could you look for a [coke]("object") in the [bedroom]("room")
+      - Locate a [shampoo]("object") in the [dining room]("room")
+      - Please locate a [baby sweets]("object") in the [dining room]("room")
+      - Find a [bisquits]("object") in the [living room]("room")
 
 
   - intent: place_object_in_placement
@@ -378,11 +378,11 @@ nlu:
 
   - intent: find_gesture_person_in_room
     examples: |
-      - Could you look for the [rising left]("gesture") arm person in the [dining room]("place")
-      - Could you find the [pointing right]("gesture") person in the [Kitchen]("place")
-      - Robot please find the [rising right]("gesture") arm person in the [office]("place")
-      - Robot please find the [pointing right]("gesture") person in the [bedroom]("place")
-      - Robot please look for the [rising right]("gesture") arm person in the [office]("place")
+      - Could you look for the [rising left arm]("gesture") person in the [dining room]("room")
+      - Could you find the [pointing right]("gesture") person in the [Kitchen]("room")
+      - Robot please find the [rising right arm person]("gesture") in the [office]("room")
+      - Robot please find the [pointing right]("gesture") person in the [bedroom]("room")
+      - Robot please look for the [rising right arm]("gesture") person in the [office]("room")
 
 
   - intent: find_name_in_room
@@ -426,9 +426,9 @@ nlu:
     examples: |
       - Please escort [Mason]("name") from the [sink]("place") to the [exit]("place")
       - Could you please guide [Mason]("name") from the [living table]("place") to the [bed]("place")
-      - Robot please escort [Alexander]("name") from the [living table]("place") to the [kitchen]("place")
-      - Could you please take [James]("name") from the [cabinet]("place") to the [kitchen]("place")
-      - Robot please escort [Emily]("name") from the [bed]("place") to the [cabinet]("place")
+      - Robot please escort [Alexander]("name") from the [living table]("place") to the [desk]("place")
+      - Could you please take [James]("name") from the [cabinet]("place") to the [cabinet]("place")
+      - Robot please escort [Emily]("name") from the [bed]("place") to the [exit]("place")
 
 
   - intent: guide_them_to_the_room
@@ -504,11 +504,11 @@ nlu:
 
   - intent: deliver_it_to_name_in_place
     examples: |
-      -Hand it to [Angel]("name") in the [bed]
-      -Bring it to [Jacob]("name") in the living [table]
-      -Hand it to [Taylor]("name") in the dining [table]
-      -Bring it to [Emily]("name") in the living [table]
-      -Deliver it to [William]("name") in the [cabinet]
+      -Hand it to [Angel]("name") in the [bed]("object")
+      -Bring it to [Jacob]("name") in the living [table]("object")
+      -Hand it to [Taylor]("name") in the dining [table]("object")
+      -Bring it to [Emily]("name") in the living [table]("object")
+      -Deliver it to [William]("name") in the [cabinet]("object")
 
   - intent: find_name
     examples: |

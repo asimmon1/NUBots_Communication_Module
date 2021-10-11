@@ -1,274 +1,10 @@
 [
   {
-    "text": "Pick up the coke from the bookcase place it on the dining table",
-    "intent": "take_object_from_the_placement+place_on_placement",
-    "intent_prediction": {
-      "name": "take_object_from_the_placement+place_object_in_placement",
-      "confidence": 0.6125726699829102
-    }
-  },
-  {
-    "text": "look for Angel in the table and guide him to the TV stand",
-    "intent": "find_name_in_place+go_to_place",
-    "intent_prediction": {
-      "name": "find_name_in_place+guide_them_to_the_place",
-      "confidence": 0.8769142031669617
-    }
-  },
-  {
-    "text": "Could you please locate a coconut milk in the corridor and place it on the living shelf",
-    "intent": "find_object_in_room+place_on_placement",
-    "intent_prediction": {
-      "name": "find_object_in_room+place_object_in_placement",
-      "confidence": 0.9971024990081787
-    }
-  },
-  {
-    "text": "Could you locate a beer in the bedroom and place it on the living shelf",
-    "intent": "find_object_in_room+place_on_placement",
-    "intent_prediction": {
-      "name": "find_object_in_room+place_object_in_placement",
-      "confidence": 0.9995244145393372
-    }
-  },
-  {
-    "text": "Robot please find Ethan in the living table and guide him to the bedroom",
-    "intent": "find_them_in_place+guide_them_to_the_room",
-    "intent_prediction": {
-      "name": "find_name_in_place+guide_them_to_the_room",
-      "confidence": 0.989763081073761
-    }
-  },
-  {
-    "text": "Please look for Ava in the desk and take her to the living table",
-    "intent": "find_them_in_place+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_name_in_place+guide_them_to_the_place",
-      "confidence": 0.8917831182479858
-    }
-  },
-  {
-    "text": "Look for Liam in the bed and escort him to the bed",
-    "intent": "find_them_in_place+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_name_in_place+guide_them_to_the_place",
-      "confidence": 0.8829347491264343
-    }
-  },
-  {
-    "text": "Please look for Jacob in the bed and take him to the exit",
-    "intent": "find_them_in_place+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_name_in_place+guide_them_to_the_place",
-      "confidence": 0.5546453595161438
-    }
-  },
-  {
-    "text": "Locate Taylor in the cabinet and escort her to the exit",
-    "intent": "find_them_in_place+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_name_in_place+guide_them_to_the_place",
-      "confidence": 0.9284362196922302
-    }
-  },
-  {
-    "text": "Robot please look for a choco syrup in the dining room put it on the bookcase",
-    "intent": "take_object_from_the_placement+place_object_in_placement",
-    "intent_prediction": {
-      "name": "find_object_in_room+place_on_placement",
-      "confidence": 0.9997303485870361
-    }
-  },
-  {
-    "text": "Could you grasp the pumper nickel from the sideshel put it on the desk",
-    "intent": "take_object_from_the_placement+place_object_in_placement",
-    "intent_prediction": {
-      "name": "take_object_from_the_placement+place_on_placement",
-      "confidence": 0.8345010876655579
-    }
-  },
-  {
-    "text": "Please locate a paprika in the bedroom and deliver it on the cabinet",
-    "intent": "find_object_in_room+place_object_in_placement",
-    "intent_prediction": {
-      "name": "find_object_in_room+place_on_placement",
-      "confidence": 0.7459483742713928
-    }
-  },
-  {
-    "text": "Please look for a chips in the living room and put it on the bar",
-    "intent": "find_object_in_room+place_object_in_placement",
-    "intent_prediction": {
-      "name": "find_object_in_room+place_on_placement",
-      "confidence": 0.9702783823013306
-    }
-  },
-  {
-    "text": "Robot please locate a soap in the dining room and place it on the cabinet",
-    "intent": "find_object_in_room+place_object_in_placement",
-    "intent_prediction": {
-      "name": "find_object_in_room+place_on_placement",
-      "confidence": 0.7876993417739868
-    }
-  },
-  {
-    "text": "Robot please look for a pretzels in the dining room and put it on the bookcase",
-    "intent": "find_object_in_room+place_object_in_placement",
-    "intent_prediction": {
-      "name": "find_object_in_room+place_on_placement",
-      "confidence": 0.9997892379760742
-    }
-  },
-  {
-    "text": "Robot please get the soap from the office and deliver it to Noah in the living table",
-    "intent": "find_object_in_room+deliver_it_to_name_in_place",
-    "intent_prediction": {
-      "name": "take_object_from_the_placement+deliver_it_to_name_in_place",
-      "confidence": 0.8661315441131592
-    }
-  },
-  {
-    "text": "Could you please find Isabella in the bed and answer a question",
-    "intent": "find_name_in_place+answer_question",
-    "intent_prediction": {
-      "name": "find_name_in_room+answer_question",
-      "confidence": 0.9801478385925293
-    }
-  },
-  {
-    "text": "Robot please find Jacob in the cabinet and answer a question",
-    "intent": "find_name_in_place+answer_question",
-    "intent_prediction": {
-      "name": "find_name_in_room+answer_question",
-      "confidence": 0.710149347782135
-    }
-  },
-  {
-    "text": "Could you locate the rising left arm person in the corridor guide him to the exit",
-    "intent": "find_gesture_person_in_room+guide_them_to_the_room",
-    "intent_prediction": {
-      "name": "find_gesture_person_in_room+guide_them_to_the_place",
-      "confidence": 0.998646080493927
-    }
-  },
-  {
-    "text": "Robot please locate Jacob in the cabinet and take him to the office",
-    "intent": "find_name_in_place+guide_them_to_the_room",
-    "intent_prediction": {
-      "name": "find_them_in_place+guide_them_to_the_room",
-      "confidence": 0.9977509379386902
-    }
-  },
-  {
-    "text": "Could you please look for Ava in the TV stand and escort her to the kitchen",
-    "intent": "find_name_in_place+guide_them_to_the_room",
-    "intent_prediction": {
-      "name": "find_them_in_place+guide_them_to_the_room",
-      "confidence": 0.49937379360198975
-    }
-  },
-  {
-    "text": "Please look for the waving person in the kitchen and escort her to the exit",
-    "intent": "find_gesture_person_in_room+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_gesture_person_in_room+guide_them_to_the_room",
-      "confidence": 0.9996592998504639
-    }
-  },
-  {
-    "text": "Could you please locate the waving person in the office and escort him to the TV stand",
-    "intent": "find_gesture_person_in_room+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_gesture_person_in_room+guide_them_to_the_room",
-      "confidence": 0.9971984624862671
-    }
-  },
-  {
-    "text": "Locate the waving person in the living room and escort her to the exit",
-    "intent": "find_gesture_person_in_room+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_gesture_person_in_room+guide_them_to_the_room",
-      "confidence": 0.9989913702011108
-    }
-  },
-  {
-    "text": "Could you please look for the rising right arm person in the corridor and escort her to the living room",
-    "intent": "find_gesture_person_in_room+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_gesture_person_in_room+guide_them_to_the_room",
-      "confidence": 0.9972549676895142
-    }
-  },
-  {
-    "text": "Robot please find Ethan in the TV stand and guide him to the bedroom",
-    "intent": "find_name_in_place+guide_them_to_the_place",
-    "intent_prediction": {
-      "name": "find_name_in_place+guide_them_to_the_room",
-      "confidence": 0.8862870931625366
-    }
-  },
-  {
-    "text": "Deliver a chips on the desk",
-    "intent": "find_object_in_room",
-    "intent_prediction": {
-      "name": "place_object_in_placement",
-      "confidence": 0.9982756972312927
-    }
-  },
-  {
-    "text": "Could you deliver a baby sweets on the sideshelf",
-    "intent": "find_object_in_room",
-    "intent_prediction": {
-      "name": "place_object_in_placement",
-      "confidence": 0.7992449998855591
-    }
-  },
-  {
-    "text": "Deliver a soap on the sideshelf",
-    "intent": "find_object_in_room",
-    "intent_prediction": {
-      "name": "place_object_in_placement",
-      "confidence": 0.9898465275764465
-    }
-  },
-  {
-    "text": "Robot please put a choco syrup on the sideshelf",
-    "intent": "find_object_in_room",
-    "intent_prediction": {
-      "name": "place_object_in_placement",
-      "confidence": 0.8545008897781372
-    }
-  },
-  {
-    "text": "Could you place a beer on the cupboard",
-    "intent": "find_object_in_room",
-    "intent_prediction": {
-      "name": "place_object_in_placement",
-      "confidence": 0.8384997248649597
-    }
-  },
-  {
-    "text": "Please put a shampoo on the TV stand",
-    "intent": "place_object_in_placement",
-    "intent_prediction": {
-      "name": "place_on_placement",
-      "confidence": 0.8867745399475098
-    }
-  },
-  {
     "text": "Could you put a beer on the living shelf",
     "intent": "place_object_in_placement",
     "intent_prediction": {
-      "name": "find_object_in_room+place_object_in_placement",
-      "confidence": 0.43262985348701477
-    }
-  },
-  {
-    "text": "Could you put a apple on the drawer",
-    "intent": "place_object_in_placement",
-    "intent_prediction": {
-      "name": "place_on_placement",
-      "confidence": 0.9396849870681763
+      "name": "take_object_from_the_placement+place_on_placement",
+      "confidence": 0.40601763129234314
     }
   },
   {
@@ -276,23 +12,7 @@
     "intent": "place_object_in_placement",
     "intent_prediction": {
       "name": "find_object_in_room+place_on_placement",
-      "confidence": 0.8307784199714661
-    }
-  },
-  {
-    "text": "Robot please escort Alexander from the living table to the kitchen",
-    "intent": "guide_name_from_place_to_place",
-    "intent_prediction": {
-      "name": "guide_name_from_place_to_room",
-      "confidence": 0.7625864744186401
-    }
-  },
-  {
-    "text": "Could you please take James from the cabinet to the kitchen",
-    "intent": "guide_name_from_place_to_place",
-    "intent_prediction": {
-      "name": "guide_name_from_place_to_room",
-      "confidence": 0.880787193775177
+      "confidence": 0.817277729511261
     }
   },
   {
@@ -300,31 +20,23 @@
     "intent": "guide_them_to_the_place",
     "intent_prediction": {
       "name": "find_them_in_place+guide_them_to_the_place",
-      "confidence": 0.8302470445632935
+      "confidence": 0.9217455983161926
     }
   },
   {
-    "text": "Locate Madison",
-    "intent": "find_name",
+    "text": "Give it to Ethan",
+    "intent": "deliver_to_name",
     "intent_prediction": {
-      "name": "find_name_in_room",
-      "confidence": 0.3092153072357178
+      "name": "deliver_it_to_name_in_place",
+      "confidence": 0.538628876209259
     }
   },
   {
-    "text": "Look for Robin",
-    "intent": "find_name",
+    "text": "Hand it to Madison",
+    "intent": "deliver_to_name",
     "intent_prediction": {
-      "name": "find_name_in_place",
-      "confidence": 0.6243772506713867
-    }
-  },
-  {
-    "text": "Look for Madison",
-    "intent": "find_name",
-    "intent_prediction": {
-      "name": "find_name_in_room+follow_them",
-      "confidence": 0.36103567481040955
+      "name": "deliver_it_to_name_in_place",
+      "confidence": 0.5109411478042603
     }
   }
 ]
