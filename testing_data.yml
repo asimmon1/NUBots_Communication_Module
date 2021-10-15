@@ -19,7 +19,7 @@ nlu:
   - intent: go_to_place+take_object_from_the_placement+deliver_it_to_name_in_place
     examples: |
       - Go to the [cabinet]("place") pick up the [beer]("object") from the [sideshelf]("place") give it to [Ethan]("name") in the [bed]("place")
-      - move to the [table]("place") grasp the [coke]("object") from the [TV stand]("place") hand it to [Nikki]("name") in the [living table]("place")
+      - move to the [dining table]("place") grasp the [coke]("object") from the [TV stand]("place") hand it to [Nikki]("name") in the [living table]("place")
 
 
     # Cat 2 multi intents ==============================================================================================
@@ -187,7 +187,7 @@ nlu:
       - Robot please find the [pointing right]("gesture") person in the [corridor]("room") and follow him
       - Locate the [pointing right]("gesture") person in the [living room]("room") and follow him
       - Could you find the [pointing left]("gesture") person in the [dining room]("room") and follow him
-      - Please locate the [rising left]("gesture") arm person in the [dining room]("room") follow him
+      - Please locate the [rising left arm]("gesture") person in the [dining room]("room") follow him
       - Could you locate the [pointing left]("gesture") person in the [bedroom]("room") follow him
 
 
@@ -203,10 +203,10 @@ nlu:
   # find and guide
   - intent: find_gesture_person_in_room+guide_them_to_the_room
     examples: |
-      - Could you please find the [rising left]("gesture") arm person in the [bedroom]("room") and escort him to the [living room]("room")
-      - Could you please look for the [rising right]("gesture") arm person in the [dining room]("room") and escort him to the [office]("room")
+      - Could you please find the [rising left arm]("gesture") person in the [bedroom]("room") and escort him to the [living room]("room")
+      - Could you please look for the [rising right arm]("gesture") person in the [dining room]("room") and escort him to the [office]("room")
       - Please look for the [pointing right]("gesture") person in the [office]("room") escort him to the [bedroom]("room")
-      - Could you locate the [rising left]("gesture") arm person in the [corridor]("room") guide him to the [kitchen]("room")
+      - Could you locate the [rising left arm]("gesture") person in the [corridor]("room") guide him to the [kitchen]("room")
       - Robot please look for the [waving]("gesture") person in the [corridor]("room") escort him to the [living room]("room")
 
 
@@ -221,7 +221,7 @@ nlu:
 
   - intent: find_gesture_person_in_room+guide_them_to_the_place
     examples: |
-      - Could you please look for the [rising right arm]("gesture") person in the [Kitchen]("room") and guide her to the dining [table]("place")
+      - Could you please look for the [rising right arm]("gesture") person in the [Kitchen]("room") and guide her to the [dining table]("place")
       - Please look for the [waving]("gesture") person in the [kitchen]("room") and escort her to the [exit]("place")
       - Could you please locate the [waving]("gesture") person in the [office]("room") and escort him to the [TV stand]("place")
       - Locate the [waving]("gesture") person in the [living room]("room") and escort her to the [exit]("place")
@@ -380,7 +380,7 @@ nlu:
     examples: |
       - Could you look for the [rising left arm]("gesture") person in the [dining room]("room")
       - Could you find the [pointing right]("gesture") person in the [Kitchen]("room")
-      - Robot please find the [rising right arm person]("gesture") in the [office]("room")
+      - Robot please find the [rising right arm]("gesture") person in the [office]("room")
       - Robot please find the [pointing right]("gesture") person in the [bedroom]("room")
       - Robot please look for the [rising right arm]("gesture") person in the [office]("room")
 
@@ -504,11 +504,11 @@ nlu:
 
   - intent: deliver_it_to_name_in_place
     examples: |
-      -Hand it to [Angel]("name") in the [bed]("object")
-      -Bring it to [Jacob]("name") in the living [table]("object")
-      -Hand it to [Taylor]("name") in the dining [table]("object")
-      -Bring it to [Emily]("name") in the living [table]("object")
-      -Deliver it to [William]("name") in the [cabinet]("object")
+      -Hand it to [Angel]("name") in the [bed]("place")
+      -Bring it to [Jacob]("name") in the [living table]("place")
+      -Hand it to [Taylor]("name") in the [dining table]("place")
+      -Bring it to [Emily]("name") in the [living table]("place")
+      -Deliver it to [William]("name") in the [cabinet]("place")
 
   - intent: find_name
     examples: |

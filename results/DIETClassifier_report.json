@@ -1,26 +1,31 @@
 {
-  "\"object\"": {
-    "precision": 0.9727891156462585,
+  "\"room\"": {
+    "precision": 1.0,
     "recall": 1.0,
-    "f1-score": 0.9862068965517241,
-    "support": 143,
-    "confused_with": {}
-  },
-  "\"gesture\"": {
-    "precision": 0.9047619047619048,
-    "recall": 1.0,
-    "f1-score": 0.9500000000000001,
-    "support": 38,
+    "f1-score": 1.0,
+    "support": 137,
     "confused_with": {}
   },
   "\"place\"": {
-    "precision": 0.9758064516129032,
-    "recall": 0.9864130434782609,
-    "f1-score": 0.981081081081081,
-    "support": 368,
-    "confused_with": {
-      "\"object\"": 4
-    }
+    "precision": 1.0,
+    "recall": 0.9973262032085561,
+    "f1-score": 0.998661311914324,
+    "support": 374,
+    "confused_with": {}
+  },
+  "\"object\"": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 147,
+    "confused_with": {}
+  },
+  "\"gesture\"": {
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1-score": 0.9655172413793104,
+    "support": 45,
+    "confused_with": {}
   },
   "\"name\"": {
     "precision": 1.0,
@@ -29,29 +34,22 @@
     "support": 141,
     "confused_with": {}
   },
-  "\"room\"": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 137,
-    "confused_with": {}
-  },
   "micro avg": {
-    "precision": 0.9797377830750894,
-    "recall": 0.9939540507859734,
-    "f1-score": 0.9867947178871548,
-    "support": 827
+    "precision": 1.0,
+    "recall": 0.995260663507109,
+    "f1-score": 0.997624703087886,
+    "support": 844
   },
   "macro avg": {
-    "precision": 0.9706714944042133,
-    "recall": 0.9972826086956521,
-    "f1-score": 0.983457595526561,
-    "support": 827
+    "precision": 1.0,
+    "recall": 0.9861319073083779,
+    "f1-score": 0.9928357106587269,
+    "support": 844
   },
   "weighted avg": {
-    "precision": 0.9801530472937313,
-    "recall": 0.9939540507859734,
-    "f1-score": 0.9868989408037901,
-    "support": 827
+    "precision": 1.0,
+    "recall": 0.995260663507109,
+    "f1-score": 0.9975682541682774,
+    "support": 844
   }
 }

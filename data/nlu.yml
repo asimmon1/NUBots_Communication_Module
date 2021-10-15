@@ -344,7 +344,7 @@ nlu:
         -Could you please find the [rising left arm]("gesture") person in the [living room]("room") follow him
         -Could you please look for the [pointing right]("gesture") person in the [corridor]("room") and follow him
         -Robot please look for the [pointing right]("gesture") person in the [office]("room") follow him
-        -Could you look for the [rising left]("gesture") arm person in the [Kitchen]("room") follow him
+        -Could you look for the [rising left arm]("gesture") person in the [Kitchen]("room") follow him
         -Could you please find the [pointing left]("gesture") person in the [dining room]("room") follow him
         -Could you locate the [pointing right]("gesture") person in the [dining room]("room") follow him
         -Please locate the [waving]("gesture") person in the [dining room]("room") follow him
@@ -379,10 +379,10 @@ nlu:
         - Could you please find the [rising right arm]("gesture") person in the [corridor]("room") and guide him to the [living room]("room")
         - Could you please locate the [rising right arm]("gesture") person in the [living room]("room") escort him to the [office]("room")
         - Look for the [pointing right]("gesture") person in the [office]("room") take him to the [Kitchen]("room")
-        - Please look for the [rising right]("gesture") arm person in the [office]("room") and guide him to the [living room]("room")
+        - Please look for the [rising right arm]("gesture")  person in the [office]("room") and guide him to the [living room]("room")
         - Could you find the [pointing left]("gesture") person in the [bedroom]("room") escort him to the [kitchen]("room")
         - Could you look for the [waving]("gesture") person in the [office]("room") guide him to the [dining room]("room")
-        - Please find the [rising right]("gesture") arm person in the [bedroom]("room") guide him to the [office]("room")
+        - Please find the [rising right arm]("gesture") person in the [bedroom]("room") guide him to the [office]("room")
         - Look for the [pointing left]("gesture") person in the [bedroom]("room") and take him to the [kitchen]("room")
         - Please look for the [waving]("gesture") person in the [dining room]("room") escort him to the [sink]("room")
         - Robot please find the [waving]("gesture") person in the [dining room]("room") take him to the [living room]("room")
@@ -415,8 +415,8 @@ nlu:
         - Could you please find the [rising right arm]("gesture") person in the [dining room]("room") take him to the [cabinet]("place")
         - Could you look for the [pointing left]("gesture") person in the [dining room]("room") take him to the [TV stand]("place")
         - Find the [pointing right]("gesture") person in the [corridor]("room") guide him to the [desk]("place")
-        - Could you please locate the [rising left arm]("gesture") person in the [kitchen]("room") escort him to the [table]("place")
-        - Look for the [pointing right]("gesture") person in the [dining room]("room") and take him to the [table]("place")
+        - Could you please locate the [rising left arm]("gesture") person in the [kitchen]("room") escort him to the [living table]("place")
+        - Look for the [pointing right]("gesture") person in the [dining room]("room") and take him to the [dining table]("place")
         - Could you please locate the [waving]("gesture") person in the [Kitchen]("room") and guide him to the [desk]("place")
         - Locate the [rising left arm]("gesture") person in the [kitchen]("room") and guide him to the [living table]("place")
         - Please find the [pointing left]("gesture") person in the [corridor]("room") and take him to the [desk]("place")
@@ -569,8 +569,8 @@ nlu:
         - and look for her in the [cabinet]("place")
         - Robot please find her in the [sink]("place")
         - Could you look for her in the [dining table]("place")
-        - find her in the dining [table]("place")
-        - and look for her in the [table]("place")
+        - find her in the [dining table]("place")
+        - and look for her in the [living table]("place")
         - and locate her in the [bed]("place")
         - locate him in the [sink]("place")
         - and look for him in the [desk]("place")

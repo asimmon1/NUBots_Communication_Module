@@ -1,51 +1,37 @@
 {
-  "deliver_it_to_me": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+deliver_it_to_name_in_place+follow_them": {
+  "find_gesture_person_in_room+guide_them_to_the_place": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "find_gesture_person_in_room": {
+  "find_name_in_place+guide_them_to_the_place": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "find_name": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "place_on_placement": {
+  "go_to_place+take_object_from_the_placement+deliver_it_to_me": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "find_name_in_room+follow_them": {
+  "find_name_in_place+guide_them_to_the_room": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_room": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "find_name_in_room+answer_question": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
+    "support": 10,
     "confused_with": {}
   },
   "deliver_to_name": {
@@ -57,56 +43,7 @@
       "deliver_it_to_name_in_place": 2
     }
   },
-  "take_the_object": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+deliver_it_to_me": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+go_to_place+deliver_to_name": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "find_gesture_person_in_room+guide_them_to_the_room": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "find_name": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "place_object_in_placement+find_name_in_room+answer_question": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "guide_name_from_place_to_room": {
+  "find_object_in_room": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -120,101 +57,38 @@
     "support": 5,
     "confused_with": {}
   },
-  "find_object_in_room+deliver_it_to_me": {
+  "find_object_in_room+deliver_it_to_name_in_place": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 10,
     "confused_with": {}
   },
-  "go_to_place+take_object_from_the_placement+deliver_it_to_me": {
+  "place_on_placement": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "find_object_in_room": {
+  "find_gesture_person_in_room+follow_them": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "speak": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "find_name_in_place+guide_them_to_the_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
-  },
-  "answer_question": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 2,
-    "confused_with": {}
-  },
-  "find_name_in_place+guide_them_to_the_room": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
-  },
-  "follow_them": {
+  "follow_name_who_is_at_place": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "go_to_place+take_object_from_the_placement+deliver_it_to_name_in_place": {
-    "precision": 1.0,
+  "take_object_from_the_placement+place_on_placement": {
+    "precision": 0.8333333333333334,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 2,
-    "confused_with": {}
-  },
-  "find_object_in_room+place_on_placement": {
-    "precision": 0.9090909090909091,
-    "recall": 1.0,
-    "f1-score": 0.9523809523809523,
-    "support": 10,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+deliver_it_to_me+answer_question": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
-  },
-  "go_to_place+take_the_object+deliver_it_to_name_in_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 4,
-    "confused_with": {}
-  },
-  "find_name_in_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "find_them_in_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
+    "f1-score": 0.9090909090909091,
     "support": 5,
     "confused_with": {}
   },
@@ -232,18 +106,95 @@
     "support": 5,
     "confused_with": {}
   },
-  "take_object_from_the_placement": {
+  "take_the_object": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement+deliver_it_to_me": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 5,
     "confused_with": {}
   },
-  "find_object_in_room+deliver_it_to_name_in_place": {
+  "find_name_in_place": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "deliver_it_to_name_in_place": {
+    "precision": 0.7142857142857143,
+    "recall": 1.0,
+    "f1-score": 0.8333333333333333,
+    "support": 5,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement+deliver_it_to_name_in_place+answer_question": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 10,
+    "confused_with": {}
+  },
+  "go_to_place+take_object_from_the_placement+deliver_it_to_name_in_place": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_place": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "place_object_in_placement+find_name_in_room+answer_question": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "find_name_in_room+answer_question": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "go_to_place+take_the_object+deliver_it_to_name_in_place": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement+deliver_it_to_me+answer_question": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "guide_name_from_place_to_place": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "answer_question": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
     "confused_with": {}
   },
   "find_name_in_place+answer_question": {
@@ -253,7 +204,51 @@
     "support": 10,
     "confused_with": {}
   },
-  "find_gesture_person_in_room+follow_them": {
+  "guide_them_to_the_place": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 5,
+    "confused_with": {
+      "find_them_in_place+guide_them_to_the_place": 1
+    }
+  },
+  "find_object_in_room+place_on_placement": {
+    "precision": 0.9090909090909091,
+    "recall": 1.0,
+    "f1-score": 0.9523809523809523,
+    "support": 10,
+    "confused_with": {}
+  },
+  "find_gesture_person_in_room+guide_them_to_the_room": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "find_gesture_person_in_room": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement+deliver_it_to_name_in_place+follow_them": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "find_object_in_room+deliver_it_to_me": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 10,
+    "confused_with": {}
+  },
+  "follow_them": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -267,30 +262,63 @@
     "support": 5,
     "confused_with": {}
   },
-  "guide_them_to_the_place": {
-    "precision": 1.0,
-    "recall": 0.8,
-    "f1-score": 0.888888888888889,
-    "support": 5,
-    "confused_with": {
-      "find_them_in_place+guide_them_to_the_place": 1
-    }
-  },
-  "take_object_from_the_placement+deliver_it_to_name_in_place+answer_question": {
+  "take_object_from_the_placement+deliver_it_to_name_in_place+guide_them_to_the_room": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+place_on_placement": {
-    "precision": 0.8333333333333334,
-    "recall": 1.0,
-    "f1-score": 0.9090909090909091,
     "support": 5,
     "confused_with": {}
   },
-  "guide_name_from_place_to_place": {
+  "deliver_it_to_me": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "speak": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "guide_name_from_place_to_room": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement+deliver_it_to_name_in_place": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "find_name_in_room+follow_them": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement+go_to_place+deliver_to_name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "take_object_from_the_placement": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "find_them_in_place": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
@@ -301,13 +329,6 @@
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "deliver_it_to_name_in_place": {
-    "precision": 0.7142857142857143,
-    "recall": 1.0,
-    "f1-score": 0.8333333333333333,
     "support": 5,
     "confused_with": {}
   },
@@ -327,27 +348,6 @@
       "take_object_from_the_placement+place_on_placement": 1,
       "find_object_in_room+place_on_placement": 1
     }
-  },
-  "follow_name_who_is_at_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "take_object_from_the_placement+deliver_it_to_name_in_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
-  },
-  "find_gesture_person_in_room+guide_them_to_the_place": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 5,
-    "confused_with": {}
   },
   "micro avg": {
     "precision": 0.9854014598540146,
