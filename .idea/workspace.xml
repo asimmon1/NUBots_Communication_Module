@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4299cc93-bc6a-4ecd-8bc0-b905cad35e3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASRBenchmarker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASRModule/ASRBenchmarker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASRModuleV1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASRModule/ASRModuleV1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommunicationDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/CommunicationDriver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Custom_data_benchmarker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASRModule/Custom_data_benchmarker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intention_Instructions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Intention_Instructions.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NLUAnalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLUModule/NLUAnalyser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OutputModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/OutputModule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/nlu-20211012-110056.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/models/Final_implementation_model.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/ASRModule/new_audio.wav" afterDir="false" />
-    </list>
+    <list default="true" id="4299cc93-bc6a-4ecd-8bc0-b905cad35e3c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +180,7 @@
       <workItem from="1633341546110" duration="8673000" />
       <workItem from="1633652008214" duration="37460000" />
       <workItem from="1633998851600" duration="18846000" />
-      <workItem from="1634598812569" duration="10568000" />
+      <workItem from="1634598812569" duration="11102000" />
     </task>
     <servers />
   </component>
