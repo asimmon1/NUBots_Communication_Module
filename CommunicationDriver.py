@@ -42,8 +42,11 @@ def process(text):
     print(model_output["intent"]["name"])
 
     print("Instruction set generated: ")
-    print(OutputModule.process(model_output))
+    model_out_copy = model_output.copy()
+
+    print(OutputModule.process(model_out_copy))
     OutputModule.verbally_respond(model_output)
+
     # Send to Output
 
 

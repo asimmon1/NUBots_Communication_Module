@@ -183,7 +183,7 @@ find_object_in_room:
 
 place_object_in_placement:
   verbal_response:
-    - I will place the object [object] in the place [place]
+    -I will place the object [object] in the place [place]
   Instruction_set:
     -locate [place]
     -go to [place]
@@ -198,7 +198,7 @@ place_object_in_placement:
 
 find_them_in_place:
   verbal_response:
-    - I will find them in the place [place]
+    -I will find them in the place [place]
   Instruction_set:
     -look for [place]
     -go to [place]
@@ -212,7 +212,7 @@ find_them_in_place:
 
 find_gesture_person_in_room:
   verbal_response:
-    - I will find the person making the gesture [gesture] in the room [room]
+    -I will find the person making the gesture [gesture] in the room [room]
   Instruction_set:
     -Look for [room]
     -go to [room]
@@ -220,15 +220,15 @@ find_gesture_person_in_room:
     -for to [gesture] person
   Expected_Entities:
     -[gesture]
-    -[person]
+    -[room]
   Entity_Instructions:
     -Identify [gesture]
-    -Identify [person]
+    -Identify [room]
 
 
 find_name_in_room:
   verbal_response:
-    - I will look for person with name [name] in the room [room]
+    -I will look for person with name [name] in the room [room]
   Instruction_set:
     -find room [room]
     -go to room [room]
@@ -245,8 +245,8 @@ follow_name_who_is_at_place:
   verbal_response:
     -I will follow person with name [name] who is at the place [place]
   Instruction_set:
-    - Look for place [place]
-    - follow name [name]
+    -Look for place [place]
+    -follow name [name]
   Expected_Entities:
     -[name]
     -[place]
@@ -308,7 +308,7 @@ guide_them_to_the_room:
     -I will guide them to the room [room]
   Instruction_set:
     -Look for [room]
-    - guide person to [room]
+    -guide person to [room]
   Expected_Entities:
     -[room]
   Entity_Instructions:
@@ -320,7 +320,7 @@ guide_them_to_the_place:
     -I will guide them to the place [place]
   Instruction_set:
     -Look for [place]
-    - guide person to [place]
+    -guide person to [place]
   Expected_Entities:
     -[place]
   Entity_Instructions:
