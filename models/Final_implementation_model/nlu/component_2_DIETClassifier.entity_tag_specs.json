@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-\"gesture\"",
+      "2": "I-\"gesture\"",
+      "3": "L-\"gesture\"",
+      "4": "U-\"gesture\"",
+      "5": "B-\"name\"",
+      "6": "I-\"name\"",
+      "7": "L-\"name\"",
+      "8": "U-\"name\"",
+      "9": "B-\"object\"",
+      "10": "I-\"object\"",
+      "11": "L-\"object\"",
+      "12": "U-\"object\"",
+      "13": "B-\"place\"",
+      "14": "I-\"place\"",
+      "15": "L-\"place\"",
+      "16": "U-\"place\"",
+      "17": "B-\"room\"",
+      "18": "I-\"room\"",
+      "19": "L-\"room\"",
+      "20": "U-\"room\"",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-\"gesture\"": 1,
+      "I-\"gesture\"": 2,
+      "L-\"gesture\"": 3,
+      "U-\"gesture\"": 4,
+      "B-\"name\"": 5,
+      "I-\"name\"": 6,
+      "L-\"name\"": 7,
+      "U-\"name\"": 8,
+      "B-\"object\"": 9,
+      "I-\"object\"": 10,
+      "L-\"object\"": 11,
+      "U-\"object\"": 12,
+      "B-\"place\"": 13,
+      "I-\"place\"": 14,
+      "L-\"place\"": 15,
+      "U-\"place\"": 16,
+      "B-\"room\"": 17,
+      "I-\"room\"": 18,
+      "L-\"room\"": 19,
+      "U-\"room\"": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

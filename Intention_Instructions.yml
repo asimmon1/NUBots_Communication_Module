@@ -165,3 +165,165 @@ go_to_place:
     -[place]
   Entity_Instructions:
     -Identify [place]
+
+find_object_in_room:
+  verbal_response:
+    -I will look for the object [object] in the room [room]
+  Instruction_set:
+    -Look for [room]
+    -Go to [room]
+    -Look for [object]
+    -Go to [object]
+  Expected_Entities:
+    -[object]
+    -[room]
+  Entity_Instructions:
+    -Identify [object]
+    -Identify [room]
+
+place_object_in_placement:
+  verbal_response:
+    - I will place the object [object] in the place [place]
+  Instruction_set:
+    -locate [place]
+    -go to [place]
+    -deliver [object] on [place]
+  Expected_Entities:
+    -[place]
+    -[object]
+  Entity_Instructions:
+    -Identify [place]
+    -Confirm possession of [object]
+
+
+find_them_in_place:
+  verbal_response:
+    - I will find them in the place [place]
+  Instruction_set:
+    -look for [place]
+    -go to [place]
+    -look for person
+    -confirm person
+  Expected_Entities:
+    -[place]
+  Entity_Instructions:
+    -Identify [place]
+
+
+find_gesture_person_in_room:
+  verbal_response:
+    - I will find the person making the gesture [gesture] in the room [room]
+  Instruction_set:
+    -Look for [room]
+    -go to [room]
+    -look for person making [gesture]
+    -for to [gesture] person
+  Expected_Entities:
+    -[gesture]
+    -[person]
+  Entity_Instructions:
+    -Identify [gesture]
+    -Identify [person]
+
+
+find_name_in_room:
+  verbal_response:
+    - I will look for person with name [name] in the room [room]
+  Instruction_set:
+    -find room [room]
+    -go to room [room]
+    -look for name [name]
+  Expected_Entities:
+    -[room]
+    -[name]
+  Entity_Instructions:
+    -Identify [room]
+    -Identify [name]
+
+
+follow_name_who_is_at_place:
+  verbal_response:
+    -I will follow person with name [name] who is at the place [place]
+  Instruction_set:
+    - Look for place [place]
+    - follow name [name]
+  Expected_Entities:
+    -[name]
+    -[place]
+  Entity_Instructions:
+    -Identify [place]
+    -Identify [name]
+
+
+follow_them:
+  verbal_response:
+    -I will follow them
+  Instruction_set:
+    -follow person
+  Expected_Entities:
+    -Null
+  Entity_Instructions:
+    -Null
+
+
+guide_name_from_place_to_room:
+  verbal_response:
+    -I will guide person with name [name] from place [place] to room [room]
+  Instruction_set:
+    -Identify [place]
+    -Identify [name]
+    -Identify [room]
+    -for to [name]
+    -guide to [room]
+  Expected_Entities:
+    -[name]
+    -[place]
+    -[room]
+  Entity_Instructions:
+    -Identify [name]
+    -Identify [place]
+    -Identify [room]
+
+
+guide_name_from_place_to_place:
+  verbal_response:
+    -I will guide person with name [name] from place [place] to place [place]
+  Instruction_set:
+    -look for [name]
+    -look for [place]
+    -look for second [place]
+    -guide name to second [place]
+  Expected_Entities:
+    -[name]
+    -[place]
+    -[place]
+  Entity_Instructions:
+    -Identify [name]
+    -Identify [place]
+    -Identify [place]
+
+
+guide_them_to_the_room:
+  verbal_response:
+    -I will guide them to the room [room]
+  Instruction_set:
+    -Look for [room]
+    - guide person to [room]
+  Expected_Entities:
+    -[room]
+  Entity_Instructions:
+    -Identify [room]
+
+
+guide_them_to_the_place:
+  verbal_response:
+    -I will guide them to the place [place]
+  Instruction_set:
+    -Look for [place]
+    - guide person to [place]
+  Expected_Entities:
+    -[place]
+  Entity_Instructions:
+    -Identify [place]
+
+

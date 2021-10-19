@@ -1,6 +1,5 @@
-from rasa.nlu.model import Interpreter
-import NLUAnalyser
-import ASRModuleV1
+from NLUModule import NLUAnalyser
+from ASRModule import ASRModuleV1
 import OutputModule
 
 # Load the ASR module
