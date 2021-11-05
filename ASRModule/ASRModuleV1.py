@@ -2,6 +2,7 @@ from time import sleep
 import wave
 from speech_recognition import Microphone, Recognizer, AudioFile, UnknownValueError
 
+# can be either google or sphinx
 model = "google"
 
 
@@ -18,7 +19,7 @@ def callback(recognizer, source):
         else:
             recognized = recognizer.recognize_sphinx(source)
 
-        print("You said: ", recognized)
+
         file.close()
 
 
@@ -55,7 +56,7 @@ def analyseFile(file):
 
     try:
         recognized = recog.recognize_sphinx(audio_content)
-        print("You said: ", recognized)
+
 
     except UnknownValueError:
         print("Cannot hear input value  ")

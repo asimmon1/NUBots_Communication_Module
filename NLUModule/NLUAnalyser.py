@@ -7,7 +7,7 @@ rasa_model_path = "models/"+model_name+"/nlu"
 interpreter = Interpreter.load(rasa_model_path)
 
 
-
+# gives  model ouput on the given text
 def rasa_output(text):
     print(text)
     message = str(text).strip()
@@ -17,7 +17,7 @@ def rasa_output(text):
 
     return result
 
-
+# for maual testing and development
 def manual_input_loop():
     user_input = input(">>")
     while not (user_input.lower() in ("q") ):
@@ -27,6 +27,7 @@ def manual_input_loop():
         respond(model_output)
         user_input = input(">>")
 
+# a basic entry analyse method for text
 def analyse(text):
 
     model_output = rasa_output(text)

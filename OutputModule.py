@@ -197,15 +197,17 @@ def process(model_output):
 
         # get the expected entities
         entities_string = intention_list[intent]["Expected_Entities"]
-        expected_entities = format_entity_list(entities_string)
-        # match to next availble
         matched_entities = []
+        if "null" not in entities_string:
+            expected_entities = format_entity_list(entities_string)
+            # match to next availble
 
-        if len(entities) > 0:
-            for entity in expected_entities:
-                if entity == entities[current_entity]["entity"].strip("\""):
-                    matched_entities.append(entities[current_entity])
-                    current_entity += 1
+            if len(entities) > 0:
+                for entity in expected_entities:
+                    if current_entity < len(entities):
+                        if entity == entities[current_entity]["entity"].strip("\""):
+                            matched_entities.append(entities[current_entity])
+                            current_entity += 1
 
         # trim entity list=
 
@@ -230,11 +232,12 @@ def verbally_respond(model_output):
         # match to next available
         matched_entities = []
 
-        if len(entities) > 0:
+        if len(entities) >0:
             for entity in expected_entities:
-                if entity == entities[current_entity]["entity"].strip("\""):
-                    matched_entities.append(entities[current_entity])
-                    current_entity += 1
+                if current_entity < len(entities):
+                    if entity == entities[current_entity]["entity"].strip("\""):
+                        matched_entities.append(entities[current_entity])
+                        current_entity += 1
 
         response = ' '.join(fill_entity(response, matched_entities))
 
@@ -287,4 +290,3 @@ def format_entity_list(string):
 def find_idx(str, ch):
     yield [i for i, c in enumerate(str) if c == ch]
 
-tester()

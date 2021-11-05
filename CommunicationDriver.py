@@ -1,16 +1,19 @@
+print("Loading the Natural Language processor...")
 from NLUModule import NLUAnalyser
+
+print("Loading communication software...")
 from ASRModule import ASRModuleV1
 import OutputModule
+from difflib import SequenceMatcher
 
 # Load the ASR module
-print("Loading communication software.")
 speech_recogniser = ASRModuleV1
 
 # Load the NlU module
-print("Loading the Natural Language processor...")
 language_analyser = NLUAnalyser
 
 
+# the main driver class - continously listens for commands
 def main():
     # Initiate the output module
     output = OutputModule
@@ -31,8 +34,15 @@ def listen():
             process(value)
 
 
+def test():
+    found_value = speech_recogniser.analyseFile(test_file)
+    similarity = str(SequenceMatcher(None, actual_data, found_value).ratio())
+    print(similarity)
+    process(found_value)
+
+
 def process(text):
-    print("Proccessing input..." + text)
+    # print("Proccessing input..." + text)
 
     # pre process before sendning to be analysed
     # Send to NLU for processing
@@ -46,7 +56,7 @@ def process(text):
 
     print(OutputModule.process(model_out_copy))
     OutputModule.verbally_respond(model_output)
-
+    instruction_set = OutputModule.process(model_output)
     # Send to Output
 
 

@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4299cc93-bc6a-4ecd-8bc0-b905cad35e3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/self_testing_data/0.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/10.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/11.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/12.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/13.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/14.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/15.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/16.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/17.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/18.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/19.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/20.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/21.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/22.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/23.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/24.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/25.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/26.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/27.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/28.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/29.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/8.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_testing_data/9.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASRModule/ASRModuleV1.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASRModule/ASRModuleV1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CommunicationDriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/CommunicationDriver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intention_Instructions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Intention_Instructions.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLUModule/NLUAnalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLUModule/NLUAnalyser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OutputModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/OutputModule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new_audio.wav" beforeDir="false" afterPath="$PROJECT_DIR$/new_audio.wav" afterDir="false" />
     </list>
@@ -35,21 +66,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Adaption project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\UNI_Seng4211_Individual\Individual\NUBots_Communication_Module\ASRModule" />
-      <recent name="D:\UNI_Seng4211_Individual\Individual\NUBots_Communication_Module\NLUModule" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\UNI_Seng4211_Individual\Individual\NUBots_Communication_Module" />
       <recent name="D:\UNI_Seng4211_Individual\Individual\NUBots_Communication_Module\data" />
       <recent name="D:\UNI_Seng4211_Individual\Individual\NUBots_Communication_Module\models" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UNI_Seng4211_Individual\Individual\NUBots_Communication_Module\ASRModule" />
+      <recent name="D:\UNI_Seng4211_Individual\Individual\NUBots_Communication_Module\NLUModule" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.OutputModule">
+  <component name="RunManager" selected="Python.CommunicationDriver">
     <configuration name="ASRBenchmarker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NUBots_Communication_Module" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,8 +193,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.OutputModule" />
         <item itemvalue="Python.CommunicationDriver" />
+        <item itemvalue="Python.OutputModule" />
         <item itemvalue="Python.NLUAnalyser (1)" />
         <item itemvalue="Python.Custom_data_benchmarker" />
         <item itemvalue="Python.ASRBenchmarker" />
@@ -186,7 +217,9 @@
       <workItem from="1633341546110" duration="8673000" />
       <workItem from="1633652008214" duration="37460000" />
       <workItem from="1633998851600" duration="18846000" />
-      <workItem from="1634598812569" duration="15465000" />
+      <workItem from="1634598812569" duration="19262000" />
+      <workItem from="1635466036980" duration="789000" />
+      <workItem from="1635636268345" duration="10422000" />
     </task>
     <servers />
   </component>
@@ -194,68 +227,72 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="178" key="#Images" timestamp="1636086862157">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="178" key="#Images/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1636086862157" />
     <state x="704" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1633489929691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="704" y="323" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633489929691" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1634010382932">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1635828479666">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632439847375" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1635828479666" />
     <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634010382932" />
-    <state width="1877" height="396" key="GridCell.Tab.0.bottom" timestamp="1634618227838">
+    <state width="1063" height="783" key="GridCell.Tab.0.bottom" timestamp="1636156378141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227838" />
-    <state width="1877" height="594" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634602746770" />
-    <state width="1877" height="396" key="GridCell.Tab.0.center" timestamp="1634618227838">
+    <state width="1063" height="783" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636156378141" />
+    <state width="1877" height="439" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1636152003062" />
+    <state width="1063" height="783" key="GridCell.Tab.0.center" timestamp="1636156378140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227838" />
-    <state width="1877" height="594" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634602746769" />
-    <state width="1877" height="396" key="GridCell.Tab.0.left" timestamp="1634618227838">
+    <state width="1063" height="783" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636156378140" />
+    <state width="1877" height="439" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1636152003062" />
+    <state width="1063" height="783" key="GridCell.Tab.0.left" timestamp="1636156378140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227838" />
-    <state width="1877" height="594" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634602746769" />
-    <state width="1877" height="396" key="GridCell.Tab.0.right" timestamp="1634618227838">
+    <state width="1063" height="783" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636156378140" />
+    <state width="1877" height="439" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1636152003061" />
+    <state width="1063" height="783" key="GridCell.Tab.0.right" timestamp="1636156378140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227838" />
-    <state width="1877" height="594" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634602746769" />
-    <state width="1877" height="396" key="GridCell.Tab.1.bottom" timestamp="1634618227839">
+    <state width="1063" height="783" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1636156378140" />
+    <state width="1877" height="439" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1636152003062" />
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom" timestamp="1634862560999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227839" />
+    <state width="1877" height="396" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634862560999" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634340158006" />
-    <state width="1877" height="396" key="GridCell.Tab.1.center" timestamp="1634618227839">
+    <state width="1877" height="396" key="GridCell.Tab.1.center" timestamp="1634862560997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227839" />
+    <state width="1877" height="396" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634862560997" />
     <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634340158006" />
-    <state width="1877" height="396" key="GridCell.Tab.1.left" timestamp="1634618227838">
+    <state width="1877" height="396" key="GridCell.Tab.1.left" timestamp="1634862560997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227838" />
+    <state width="1877" height="396" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634862560997" />
     <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634340158005" />
-    <state width="1877" height="396" key="GridCell.Tab.1.right" timestamp="1634618227839">
+    <state width="1877" height="396" key="GridCell.Tab.1.right" timestamp="1634862560998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618227839" />
+    <state width="1877" height="396" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634862560998" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634340158006" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1632441234142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1632441234142" />
-    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1634598823288">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1635636835636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1635466224568" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1635636835636" />
+    <state x="2873" y="0" width="974" height="1047" key="dock-window-1" timestamp="1635636478388">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1633652120656" />
-    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634598823288" />
-    <state x="2114" y="-13" width="1543" height="913" maximized="true" key="dock-window-1" timestamp="1634618252176">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2114" y="-13" width="1543" height="913" maximized="true" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1634618252176" />
+    <state x="2873" y="0" width="974" height="1047" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1635636478388" />
     <state x="2354" y="320" width="1547" height="390" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1634020763719" />
     <state x="2210" y="97" width="1400" height="554" key="dock-window-2" timestamp="1633846387948">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -273,32 +310,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OutputModule.py</url>
-          <line>241</line>
+          <line>244</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OutputModule.py</url>
-          <line>227</line>
+          <line>229</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OutputModule.py</url>
-          <line>230</line>
+          <line>232</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OutputModule.py</url>
-          <line>234</line>
+          <line>237</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OutputModule.py</url>
-          <line>235</line>
+          <line>238</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/OutputModule.py</url>
-          <line>238</line>
+          <line>241</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
@@ -308,9 +345,9 @@
     <SUITE FILE_PATH="coverage/NUBots_Communication_Module$ASRModuleV1.coverage" NAME="ASRModuleV1 Coverage Results" MODIFIED="1632446228812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NUBots_Communication_Module$Custom_data_benchmarker.coverage" NAME="Custom_data_benchmarker Coverage Results" MODIFIED="1634123848854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NUBots_Communication_Module$NLUAnalyser.coverage" NAME="NLUAnalyser Coverage Results" MODIFIED="1633393275782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$OutputModule.coverage" NAME="OutputModule Coverage Results" MODIFIED="1634618227826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$OutputModule.coverage" NAME="OutputModule Coverage Results" MODIFIED="1634618642489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NUBots_Communication_Module$NLUAnalyser__1_.coverage" NAME="NLUAnalyser (1) Coverage Results" MODIFIED="1634607505226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLUModule" />
-    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$CommunicationDriver.coverage" NAME="CommunicationDriver Coverage Results" MODIFIED="1634617888303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NUBots_Communication_Module$CommunicationDriver.coverage" NAME="CommunicationDriver Coverage Results" MODIFIED="1636152003050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NUBots_Communication_Module$ASRBenchmarker.coverage" NAME="ASRBenchmarker Coverage Results" MODIFIED="1634100776508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
